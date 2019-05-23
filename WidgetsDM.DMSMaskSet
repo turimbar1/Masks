@@ -7968,7 +7968,7 @@
           <IsManagedRule Value="False" />
           <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="01-0001" />
-          <Description Value="" />
+          <Description Value="US Billing Address" />
           <ExpandedState Value="False" />
           <ForceIsNullsOff Value="False" />
           <UserSpecifiedRIDIndexEnabled Value="False" />
@@ -7976,7 +7976,7 @@
         </DMSRule>
         <TargetTableName Value="Account" />
         <WhereClauseAndSamplingContainer>
-          <WhereClause Value="WHERE Account.BillingCountry = N'US'" />
+          <WhereClause Value="WHERE BillingCountry = N'US'" />
           <WhereClauseMode Value="Custom_WhereClause" />
           <WantSamplePercent Value="False" />
           <SamplePercentage Value="100.00" />
@@ -8031,7 +8031,7 @@
               <DefaultStateCodes Value="True" />
               <IncludeOutlyingTerritories Value="False" />
               <UserTwoLetterStateCodes Value="NY, CA, TX" />
-              <WantFullStateName Value="False" />
+              <WantFullStateName Value="True" />
               <UpperCaseCounty Value="False" />
               <UpperCaseTown Value="False" />
               <UpperCaseState Value="False" />
@@ -8058,7 +8058,7 @@
               <DefaultStateCodes Value="True" />
               <IncludeOutlyingTerritories Value="False" />
               <UserTwoLetterStateCodes Value="NY, CA, TX" />
-              <WantFullStateName Value="False" />
+              <WantFullStateName Value="True" />
               <UpperCaseCounty Value="False" />
               <UpperCaseTown Value="False" />
               <UpperCaseState Value="False" />
@@ -8083,6 +8083,75 @@
               <NoAreaCode Value="False" />
             </DataSet_RDUSTL>
           </DMSPickedColumnAndDataSet>
+          <DMSPickedColumnAndDataSet>
+            <N2KSQLServerEntity_PickedColumn>
+              <N2KSQLServerEntity />
+              <ColumnName Value="BillingStateCode" />
+              <ColumnFullDataType Value="nvarchar(10)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="21" />
+              <DataType Value="nvarchar" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KSQLServerEntity_PickedColumn>
+            <DataSet_ZIPCOR>
+              <CorrelatedFieldTown Value="False" />
+              <CorrelatedFieldCounty Value="False" />
+              <CorrelatedFieldState Value="True" />
+              <CorrelatedFieldZip Value="False" />
+              <UserSpecifiedStateCodes Value="False" />
+              <DefaultStateCodes Value="True" />
+              <IncludeOutlyingTerritories Value="False" />
+              <UserTwoLetterStateCodes Value="NY, CA, TX" />
+              <WantFullStateName Value="True" />
+              <UpperCaseCounty Value="False" />
+              <UpperCaseTown Value="False" />
+              <UpperCaseState Value="False" />
+            </DataSet_ZIPCOR>
+          </DMSPickedColumnAndDataSet>
+          <DMSPickedColumnAndDataSet>
+            <N2KSQLServerEntity_PickedColumn>
+              <N2KSQLServerEntity />
+              <ColumnName Value="BillingLatitude" />
+              <ColumnFullDataType Value="float" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="23" />
+              <DataType Value="float" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KSQLServerEntity_PickedColumn>
+            <DataSet_NUMFUD>
+              <VariancePercent Value="2" />
+              <LowBoundPercent Value="-10" />
+              <HighBoundPercent Value="10" />
+              <ZeroNotValid Value="False" />
+              <RandomVariance Value="True" />
+              <DecimalPlaces Value="2" />
+            </DataSet_NUMFUD>
+          </DMSPickedColumnAndDataSet>
+          <DMSPickedColumnAndDataSet>
+            <N2KSQLServerEntity_PickedColumn>
+              <N2KSQLServerEntity />
+              <ColumnName Value="BillingLongitude" />
+              <ColumnFullDataType Value="float" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="24" />
+              <DataType Value="float" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KSQLServerEntity_PickedColumn>
+            <DataSet_NUMFUD>
+              <VariancePercent Value="2" />
+              <LowBoundPercent Value="-10" />
+              <HighBoundPercent Value="10" />
+              <ZeroNotValid Value="False" />
+              <RandomVariance Value="True" />
+              <DecimalPlaces Value="2" />
+            </DataSet_NUMFUD>
+          </DMSPickedColumnAndDataSet>
         </DMSPickedColumnAndDataSetCollection>
       </RuleSubstitution>
       <RuleSubstitution NS="DMS_Common" AS="DMSO">
@@ -8096,7 +8165,7 @@
           <IsManagedRule Value="False" />
           <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="01-0001" />
-          <Description Value="" />
+          <Description Value="UK Billing Address" />
           <ExpandedState Value="False" />
           <ForceIsNullsOff Value="False" />
           <UserSpecifiedRIDIndexEnabled Value="False" />
@@ -8104,7 +8173,7 @@
         </DMSRule>
         <TargetTableName Value="Account" />
         <WhereClauseAndSamplingContainer>
-          <WhereClause Value="WHERE Account.BillingCountry = N'UK'" />
+          <WhereClause Value="WHERE BillingCountry = N'UK'" />
           <WhereClauseMode Value="Custom_WhereClause" />
           <WantSamplePercent Value="False" />
           <SamplePercentage Value="100.00" />
@@ -8241,6 +8310,76 @@
               <NoSpacePostCode Value="False" />
             </DataSet_UKPCOR>
           </DMSPickedColumnAndDataSet>
+          <DMSPickedColumnAndDataSet>
+            <N2KSQLServerEntity_PickedColumn>
+              <N2KSQLServerEntity />
+              <ColumnName Value="BillingStateCode" />
+              <ColumnFullDataType Value="nvarchar(10)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="21" />
+              <DataType Value="nvarchar" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KSQLServerEntity_PickedColumn>
+            <DataSet_UKPCOR>
+              <CorrelatedFieldTown Value="False" />
+              <CorrelatedFieldCounty Value="False" />
+              <CorrelatedFieldCountry Value="True" />
+              <CorrelatedFieldPostCode Value="False" />
+              <CorrelatedFieldLatitude Value="False" />
+              <CorrelatedFieldLongitude Value="False" />
+              <IncludeCountryCI Value="True" />
+              <IncludeCountryEN Value="True" />
+              <IncludeCountryIM Value="True" />
+              <IncludeCountryNI Value="True" />
+              <IncludeCountrySC Value="True" />
+              <IncludeCountryWA Value="True" />
+              <NoSpacePostCode Value="False" />
+            </DataSet_UKPCOR>
+          </DMSPickedColumnAndDataSet>
+          <DMSPickedColumnAndDataSet>
+            <N2KSQLServerEntity_PickedColumn>
+              <N2KSQLServerEntity />
+              <ColumnName Value="BillingLatitude" />
+              <ColumnFullDataType Value="float" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="23" />
+              <DataType Value="float" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KSQLServerEntity_PickedColumn>
+            <DataSet_NUMFUD>
+              <VariancePercent Value="5" />
+              <LowBoundPercent Value="-10" />
+              <HighBoundPercent Value="10" />
+              <ZeroNotValid Value="False" />
+              <RandomVariance Value="True" />
+              <DecimalPlaces Value="2" />
+            </DataSet_NUMFUD>
+          </DMSPickedColumnAndDataSet>
+          <DMSPickedColumnAndDataSet>
+            <N2KSQLServerEntity_PickedColumn>
+              <N2KSQLServerEntity />
+              <ColumnName Value="BillingLongitude" />
+              <ColumnFullDataType Value="float" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="24" />
+              <DataType Value="float" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KSQLServerEntity_PickedColumn>
+            <DataSet_NUMFUD>
+              <VariancePercent Value="5" />
+              <LowBoundPercent Value="-10" />
+              <HighBoundPercent Value="10" />
+              <ZeroNotValid Value="False" />
+              <RandomVariance Value="True" />
+              <DecimalPlaces Value="2" />
+            </DataSet_NUMFUD>
+          </DMSPickedColumnAndDataSet>
         </DMSPickedColumnAndDataSetCollection>
       </RuleSubstitution>
       <RuleSubstitution NS="DMS_Common" AS="DMSO">
@@ -8254,7 +8393,7 @@
           <IsManagedRule Value="False" />
           <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="01-0001" />
-          <Description Value="" />
+          <Description Value="CA Billing Address" />
           <ExpandedState Value="False" />
           <ForceIsNullsOff Value="False" />
           <UserSpecifiedRIDIndexEnabled Value="False" />
@@ -8262,7 +8401,7 @@
         </DMSRule>
         <TargetTableName Value="Account" />
         <WhereClauseAndSamplingContainer>
-          <WhereClause Value="WHERE Account.BillingCountry = N'CA'" />
+          <WhereClause Value="WHERE BillingCountry = N'CA'" />
           <WhereClauseMode Value="Custom_WhereClause" />
           <WantSamplePercent Value="False" />
           <SamplePercentage Value="100.00" />
@@ -8317,7 +8456,7 @@
               <UserSpecifiedProvCodes Value="False" />
               <DefaultProvCodes Value="True" />
               <UserTwoLetterProvCodes Value="AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT" />
-              <WantFullProvName Value="False" />
+              <WantFullProvName Value="True" />
               <UpperCaseTown Value="False" />
               <UpperCaseProv Value="False" />
             </DataSet_CDNCOR>
@@ -8343,7 +8482,7 @@
               <UserSpecifiedProvCodes Value="False" />
               <DefaultProvCodes Value="True" />
               <UserTwoLetterProvCodes Value="AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT" />
-              <WantFullProvName Value="False" />
+              <WantFullProvName Value="True" />
               <UpperCaseTown Value="False" />
               <UpperCaseProv Value="False" />
             </DataSet_CDNCOR>
@@ -8401,10 +8540,78 @@
               <UserSpecifiedProvCodes Value="False" />
               <DefaultProvCodes Value="True" />
               <UserTwoLetterProvCodes Value="AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT" />
-              <WantFullProvName Value="False" />
+              <WantFullProvName Value="True" />
               <UpperCaseTown Value="False" />
               <UpperCaseProv Value="False" />
             </DataSet_CDNCOR>
+          </DMSPickedColumnAndDataSet>
+          <DMSPickedColumnAndDataSet>
+            <N2KSQLServerEntity_PickedColumn>
+              <N2KSQLServerEntity />
+              <ColumnName Value="BillingStateCode" />
+              <ColumnFullDataType Value="nvarchar(10)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="21" />
+              <DataType Value="nvarchar" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KSQLServerEntity_PickedColumn>
+            <DataSet_CDNCOR>
+              <CorrelatedFieldTown Value="False" />
+              <CorrelatedFieldProv Value="True" />
+              <CorrelatedFieldZip Value="False" />
+              <CorrelatedFieldLatitude Value="False" />
+              <CorrelatedFieldLongitude Value="False" />
+              <UserSpecifiedProvCodes Value="False" />
+              <DefaultProvCodes Value="True" />
+              <UserTwoLetterProvCodes Value="AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT" />
+              <WantFullProvName Value="True" />
+              <UpperCaseTown Value="False" />
+              <UpperCaseProv Value="False" />
+            </DataSet_CDNCOR>
+          </DMSPickedColumnAndDataSet>
+          <DMSPickedColumnAndDataSet>
+            <N2KSQLServerEntity_PickedColumn>
+              <N2KSQLServerEntity />
+              <ColumnName Value="BillingLatitude" />
+              <ColumnFullDataType Value="float" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="23" />
+              <DataType Value="float" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KSQLServerEntity_PickedColumn>
+            <DataSet_NUMFUD>
+              <VariancePercent Value="1" />
+              <LowBoundPercent Value="-10" />
+              <HighBoundPercent Value="10" />
+              <ZeroNotValid Value="False" />
+              <RandomVariance Value="True" />
+              <DecimalPlaces Value="2" />
+            </DataSet_NUMFUD>
+          </DMSPickedColumnAndDataSet>
+          <DMSPickedColumnAndDataSet>
+            <N2KSQLServerEntity_PickedColumn>
+              <N2KSQLServerEntity />
+              <ColumnName Value="BillingLongitude" />
+              <ColumnFullDataType Value="float" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="24" />
+              <DataType Value="float" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KSQLServerEntity_PickedColumn>
+            <DataSet_NUMFUD>
+              <VariancePercent Value="1" />
+              <LowBoundPercent Value="-10" />
+              <HighBoundPercent Value="10" />
+              <ZeroNotValid Value="False" />
+              <RandomVariance Value="True" />
+              <DecimalPlaces Value="2" />
+            </DataSet_NUMFUD>
           </DMSPickedColumnAndDataSet>
         </DMSPickedColumnAndDataSetCollection>
       </RuleSubstitution>
