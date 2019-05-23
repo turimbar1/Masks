@@ -9587,7 +9587,7 @@
       </SyncManager>
       <RuleSubstitution NS="DMS_Common" AS="DMSO">
         <DMSRule>
-          <RuleBlock Value="01" />
+          <RuleBlock Value="02" />
           <RuleNumber Value="0009" />
           <RuleSubscript Value="-01" />
           <IsDisabled Value="False" />
@@ -9679,7 +9679,7 @@
       </RuleSubstitution>
       <RuleSubstitution NS="DMS_Common" AS="DMSO">
         <DMSRule>
-          <RuleBlock Value="01" />
+          <RuleBlock Value="02" />
           <RuleNumber Value="0010" />
           <RuleSubscript Value="-01" />
           <IsDisabled Value="False" />
@@ -9687,7 +9687,7 @@
           <WantMultipleActiveResultSets Value="False" />
           <IsManagedRule Value="False" />
           <CommitFreq Value="1000" />
-          <SerializedParentRuleID Value="01-0009" />
+          <SerializedParentRuleID Value="02-0009" />
           <Description Value="Male Names" />
           <ExpandedState Value="False" />
           <ForceIsNullsOff Value="False" />
@@ -9732,7 +9732,7 @@
       </RuleSubstitution>
       <RuleCommand NS="DMS_Common" AS="DMSO">
         <DMSRule>
-          <RuleBlock Value="01" />
+          <RuleBlock Value="02" />
           <RuleNumber Value="0011" />
           <RuleSubscript Value="-01" />
           <IsDisabled Value="False" />
@@ -9740,7 +9740,7 @@
           <WantMultipleActiveResultSets Value="False" />
           <IsManagedRule Value="False" />
           <CommitFreq Value="1000" />
-          <SerializedParentRuleID Value="01-0010" />
+          <SerializedParentRuleID Value="02-0010" />
           <Description Value="Full Name Column" />
           <ExpandedState Value="False" />
           <ForceIsNullsOff Value="False" />
@@ -9759,6 +9759,55 @@
         <RuleStage Value="STAGE1" />
         <SyncManagerRuleUsage Value="SYNCMGRUSAGE_NONE" />
       </RuleCommand>
+      <RuleRowInternal NS="DMS_Common" AS="DMSO">
+        <DMSRule>
+          <RuleBlock Value="02" />
+          <RuleNumber Value="0012" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="02-0010" />
+          <Description Value="EMPLID" />
+          <ExpandedState Value="False" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+        </DMSRule>
+        <TargetTableName Value="DM_EMPLOYEE" />
+        <TargetColumnName Value="emp_id" />
+        <ReplacementClause Value="SUBSTRING(UPPER(Last_Name),1,3)+DMSPARAM1" />
+        <UseFastSinglePass Value="False" />
+        <WhereClauseAndSamplingContainer>
+          <WhereClause Value="where ..." />
+          <WhereClauseMode Value="Where_NotNullOrEmpty" />
+          <WantSamplePercent Value="False" />
+          <SamplePercentage Value="100.00" />
+          <WantRowLimit Value="False" />
+          <RowLimit Value="1000" />
+          <WantDistinctSet Value="False" />
+          <ForceInLineNullSkips Value="False" />
+        </WhereClauseAndSamplingContainer>
+        <RangeOptionsContainer>
+          <RangeClause Value="" />
+          <RangeLow Value="" />
+          <RangeHigh Value="" />
+        </RangeOptionsContainer>
+        <DMSPickedParamAndDataSetCollection>
+          <DMSPickedParamAndDataSet>
+            <N2KSQLServerEntity_PickedParam>
+              <N2KSQLServerEntity />
+              <ParamNumber Value="1" />
+              <ParamName Value="DMSPARAM1" />
+            </N2KSQLServerEntity_PickedParam>
+            <DataSet_RNDALN>
+              <TemplateString Value="%n%n%n%n%n%C" />
+            </DataSet_RNDALN>
+          </DMSPickedParamAndDataSet>
+        </DMSPickedParamAndDataSetCollection>
+      </RuleRowInternal>
     </DMSRuleBindingList>
   </DMSSetContainer>
 </DMSSetContainer_MaskingSet>
