@@ -7976,7 +7976,7 @@
         </DMSRule>
         <TargetTableName Value="Account" />
         <WhereClauseAndSamplingContainer>
-          <WhereClause Value="WHERE BillingCountry = N'US'" />
+          <WhereClause Value="WHERE BillingCountryCode = N'US'" />
           <WhereClauseMode Value="Custom_WhereClause" />
           <WantSamplePercent Value="False" />
           <SamplePercentage Value="100.00" />
@@ -8031,7 +8031,7 @@
               <DefaultStateCodes Value="True" />
               <IncludeOutlyingTerritories Value="False" />
               <UserTwoLetterStateCodes Value="NY, CA, TX" />
-              <WantFullStateName Value="True" />
+              <WantFullStateName Value="False" />
               <UpperCaseCounty Value="False" />
               <UpperCaseTown Value="False" />
               <UpperCaseState Value="False" />
@@ -8058,7 +8058,7 @@
               <DefaultStateCodes Value="True" />
               <IncludeOutlyingTerritories Value="False" />
               <UserTwoLetterStateCodes Value="NY, CA, TX" />
-              <WantFullStateName Value="True" />
+              <WantFullStateName Value="False" />
               <UpperCaseCounty Value="False" />
               <UpperCaseTown Value="False" />
               <UpperCaseState Value="False" />
@@ -8104,7 +8104,7 @@
               <DefaultStateCodes Value="True" />
               <IncludeOutlyingTerritories Value="False" />
               <UserTwoLetterStateCodes Value="NY, CA, TX" />
-              <WantFullStateName Value="True" />
+              <WantFullStateName Value="False" />
               <UpperCaseCounty Value="False" />
               <UpperCaseTown Value="False" />
               <UpperCaseState Value="False" />
@@ -8173,7 +8173,7 @@
         </DMSRule>
         <TargetTableName Value="Account" />
         <WhereClauseAndSamplingContainer>
-          <WhereClause Value="WHERE BillingCountry = N'UK'" />
+          <WhereClause Value="WHERE BillingCountryCode = N'UK'" />
           <WhereClauseMode Value="Custom_WhereClause" />
           <WantSamplePercent Value="False" />
           <SamplePercentage Value="100.00" />
@@ -8401,7 +8401,7 @@
         </DMSRule>
         <TargetTableName Value="Account" />
         <WhereClauseAndSamplingContainer>
-          <WhereClause Value="WHERE BillingCountry = N'CA'" />
+          <WhereClause Value="WHERE BillingCountryCode = N'CA'" />
           <WhereClauseMode Value="Custom_WhereClause" />
           <WantSamplePercent Value="False" />
           <SamplePercentage Value="100.00" />
@@ -8456,7 +8456,7 @@
               <UserSpecifiedProvCodes Value="False" />
               <DefaultProvCodes Value="True" />
               <UserTwoLetterProvCodes Value="AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT" />
-              <WantFullProvName Value="True" />
+              <WantFullProvName Value="False" />
               <UpperCaseTown Value="False" />
               <UpperCaseProv Value="False" />
             </DataSet_CDNCOR>
@@ -8482,7 +8482,7 @@
               <UserSpecifiedProvCodes Value="False" />
               <DefaultProvCodes Value="True" />
               <UserTwoLetterProvCodes Value="AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT" />
-              <WantFullProvName Value="True" />
+              <WantFullProvName Value="False" />
               <UpperCaseTown Value="False" />
               <UpperCaseProv Value="False" />
             </DataSet_CDNCOR>
@@ -8540,7 +8540,7 @@
               <UserSpecifiedProvCodes Value="False" />
               <DefaultProvCodes Value="True" />
               <UserTwoLetterProvCodes Value="AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT" />
-              <WantFullProvName Value="True" />
+              <WantFullProvName Value="False" />
               <UpperCaseTown Value="False" />
               <UpperCaseProv Value="False" />
             </DataSet_CDNCOR>
@@ -8566,7 +8566,7 @@
               <UserSpecifiedProvCodes Value="False" />
               <DefaultProvCodes Value="True" />
               <UserTwoLetterProvCodes Value="AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT" />
-              <WantFullProvName Value="True" />
+              <WantFullProvName Value="False" />
               <UpperCaseTown Value="False" />
               <UpperCaseProv Value="False" />
             </DataSet_CDNCOR>
