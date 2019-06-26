@@ -8701,7 +8701,7 @@
           <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="01-0001" />
           <Description Value="Customer First Name" />
-          <ExpandedState Value="False" />
+          <ExpandedState Value="True" />
           <ForceIsNullsOff Value="False" />
           <UserSpecifiedRIDIndexEnabled Value="False" />
           <UserSpecifiedRIDIndex Value="" />
@@ -9683,7 +9683,7 @@
               <CommitFreq Value="1000" />
               <SerializedParentRuleID Value="04-0008-01" />
               <Description Value="Populate dbo.TMP_DMS_0008_8531142 Staging Table from DM_CUSTOMER" />
-              <ExpandedState Value="False" />
+              <ExpandedState Value="True" />
               <ForceIsNullsOff Value="False" />
               <UserSpecifiedRIDIndexEnabled Value="False" />
               <UserSpecifiedRIDIndex Value="" />
@@ -9819,7 +9819,7 @@
           <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="01-0001" />
           <Description Value="Birthdate and Names" />
-          <ExpandedState Value="True" />
+          <ExpandedState Value="False" />
           <ForceIsNullsOff Value="False" />
           <UserSpecifiedRIDIndexEnabled Value="False" />
           <UserSpecifiedRIDIndex Value="" />
