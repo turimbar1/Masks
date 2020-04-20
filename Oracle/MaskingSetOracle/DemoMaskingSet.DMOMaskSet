@@ -1,0 +1,2597 @@
+<?xml version="1.0"?>
+<!--Data Masker DMOMasking Set-->
+<DMOSetContainer_MaskingSet>
+  <DMOVersion Value="6.1.15.4513" />
+  <MaskingSetOptions>
+    <maskingSetNotesTitle Value="Comments and Notes" />
+    <maskingSetNotesComments Value="Comments and notes are displayed here.&#xD;&#xA;&#xD;&#xA;Use the Edit button on the Misc. Setup tab to change this information or to prevent it from being shown." />
+    <ShowNotesOnSetLoad Value="False" />
+    <NoShowSaveFeedback Value="False" />
+    <TestConnBeforeRunningSet Value="False" />
+    <EnableANDClausesOnT2TRules Value="False" />
+    <EnableAdvancedRuleTools Value="False" />
+    <SuppressNoRowsInStage2Warnings Value="False" />
+    <PermitCrossInstanceRules Value="False" />
+    <PermitCrossSchemaSyncMgrRules Value="False" />
+    <PermitCrossSchemaT2TRules Value="True" />
+    <T_Spare1 Value="False" />
+    <AutoCreateStatsTables Value="True" />
+    <AutoTruncateStatsTables Value="True" />
+    <EnableDeltaMarkers Value="True" />
+    <PutSetNameInWindowTitle Value="False" />
+    <CreateNewLogFileOnEachRun Value="False" />
+    <P_Spare2 Value="False" />
+    <numWorkerThreads Value="2" />
+    <SpeedOrMemoryTradeoff Value="SPEEDORMEMORY_WANTSPEED" />
+    <ConnIsUnicode Value="False" />
+    <AutoEmitRuleStatisticsReportToLog Value="True" />
+    <AutoEmitRuleStatisticsReportToFile Value="True" />
+    <AutoEmitRuleStatisticsReportDirectory Value="C:\Users\redgate\Documents\Data Masker (Oracle)\Reports" />
+    <AutoEmitTableStatsReportToLog Value="True" />
+    <AutoEmitTableStatsReportToFile Value="True" />
+    <AutoEmitTableStatsReportDirectory Value="C:\Users\redgate\Documents\Data Masker (Oracle)\Reports" />
+  </MaskingSetOptions>
+  <DMOSetContainer>
+    <DMORuleBindingList>
+      <RuleController>
+        <DMORule>
+          <RuleBlock Value="01" />
+          <RuleNumber Value="0001" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <SerializedParentRuleID Value="00-0000-00" />
+          <Description Value="" />
+          <ExpandedState Value="True" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+        </DMORule>
+        <DMOSchemaEntity_Login>
+          <N2KOracleEntity_Login>
+            <N2KOracleEntity />
+            <TNSName Value="" />
+            <HostName Value="localhost" />
+            <Port Value="1521" />
+            <SID Value="Dev1" />
+            <InitialRole Value="DEFAULT" />
+            <ConnectionTimeOut Value="5" />
+            <ProxyTargetSchema Value="HR" />
+            <ServerName Value="" />
+            <AuthenticationMode Value="TCPIP" />
+            <UserName Value="HR" />
+            <ProxyEnabled Value="False" />
+            <RememberPassword Value="True" />
+            <EnPassword Value="bRZH6siA/ndwWehjcsTHfA==" />
+            <DirectMode Value="False" />
+            <SchemaName Value="" />
+            <DBVersion Value="DEFAULT_DB_VERSION" />
+            <OnlyTablesWithRowsWereFetched Value="False" />
+            <SchemaTables>
+              <DMOSchemaEntity_Table>
+                <N2KOracleEntity_Table>
+                  <N2KOracleEntity />
+                  <TableName Value="CONTACTS" />
+                  <RowCountInDB Value="100" />
+                  <IsIOT Value="False" />
+                  <IsEXT Value="False" />
+                  <IsMView Value="False" />
+                  <IsMViewLog Value="False" />
+                  <IsAQ Value="False" />
+                  <IsDR Value="False" />
+                  <IsBIN Value="False" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="CONTACT_ID" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="6" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="FIRST_NAME" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="20" />
+                        <CharLength Value="20" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="LAST_NAME" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="3" />
+                        <CharacterMaximumLength Value="25" />
+                        <CharLength Value="25" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="ADDRESS1" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="4" />
+                        <CharacterMaximumLength Value="30" />
+                        <CharLength Value="30" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="ADDRESS2" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="5" />
+                        <CharacterMaximumLength Value="30" />
+                        <CharLength Value="30" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="ADDRESS3" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="6" />
+                        <CharacterMaximumLength Value="30" />
+                        <CharLength Value="30" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="ZIPCODE" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="7" />
+                        <CharacterMaximumLength Value="10" />
+                        <CharLength Value="10" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="EMAIL" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="8" />
+                        <CharacterMaximumLength Value="24" />
+                        <CharLength Value="24" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="PHONE_NUMBER" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="9" />
+                        <CharacterMaximumLength Value="20" />
+                        <CharLength Value="20" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMOSchemaEntity_Table>
+              <DMOSchemaEntity_Table>
+                <N2KOracleEntity_Table>
+                  <N2KOracleEntity />
+                  <TableName Value="CONTACTS_NOTES" />
+                  <RowCountInDB Value="0" />
+                  <IsIOT Value="False" />
+                  <IsEXT Value="False" />
+                  <IsMView Value="False" />
+                  <IsMViewLog Value="False" />
+                  <IsAQ Value="False" />
+                  <IsDR Value="False" />
+                  <IsBIN Value="False" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="CONTACT_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="6" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="FIRST_NAME" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="20" />
+                        <CharLength Value="20" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="LAST_NAME" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="3" />
+                        <CharacterMaximumLength Value="25" />
+                        <CharLength Value="25" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="FIDELITY_NUM" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="4" />
+                        <CharacterMaximumLength Value="20" />
+                        <CharLength Value="20" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMOSchemaEntity_Table>
+              <DMOSchemaEntity_Table>
+                <N2KOracleEntity_Table>
+                  <N2KOracleEntity />
+                  <TableName Value="COUNTRIES" />
+                  <RowCountInDB Value="25" />
+                  <IsIOT Value="False" />
+                  <IsEXT Value="False" />
+                  <IsMView Value="False" />
+                  <IsMViewLog Value="False" />
+                  <IsAQ Value="False" />
+                  <IsDR Value="False" />
+                  <IsBIN Value="False" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="COUNTRY_ID" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="char" />
+                        <OrdinalPosition Value="1" />
+                        <CharacterMaximumLength Value="2" />
+                        <CharLength Value="2" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="COUNTRY_NAME" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="40" />
+                        <CharLength Value="40" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="REGION_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="3" />
+                        <NumericPrecision Value="0" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMOSchemaEntity_Table>
+              <DMOSchemaEntity_Table>
+                <N2KOracleEntity_Table>
+                  <N2KOracleEntity />
+                  <TableName Value="DEPARTMENTS" />
+                  <RowCountInDB Value="27" />
+                  <IsIOT Value="False" />
+                  <IsEXT Value="False" />
+                  <IsMView Value="False" />
+                  <IsMViewLog Value="False" />
+                  <IsAQ Value="False" />
+                  <IsDR Value="False" />
+                  <IsBIN Value="False" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="DEPARTMENT_ID" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="4" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="DEPARTMENT_NAME" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="30" />
+                        <CharLength Value="30" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="MANAGER_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="3" />
+                        <NumericPrecision Value="6" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="LOCATION_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="4" />
+                        <NumericPrecision Value="4" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMOSchemaEntity_Table>
+              <DMOSchemaEntity_Table>
+                <N2KOracleEntity_Table>
+                  <N2KOracleEntity />
+                  <TableName Value="EMPLOYEES" />
+                  <RowCountInDB Value="107" />
+                  <IsIOT Value="False" />
+                  <IsEXT Value="False" />
+                  <IsMView Value="False" />
+                  <IsMViewLog Value="False" />
+                  <IsAQ Value="False" />
+                  <IsDR Value="False" />
+                  <IsBIN Value="False" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="EMPLOYEE_ID" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="6" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="FIRST_NAME" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="20" />
+                        <CharLength Value="20" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="LAST_NAME" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="3" />
+                        <CharacterMaximumLength Value="25" />
+                        <CharLength Value="25" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="EMAIL" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="4" />
+                        <CharacterMaximumLength Value="25" />
+                        <CharLength Value="25" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="PHONE_NUMBER" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="5" />
+                        <CharacterMaximumLength Value="20" />
+                        <CharLength Value="20" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="HIRE_DATE" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="date" />
+                        <OrdinalPosition Value="6" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="JOB_ID" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="7" />
+                        <CharacterMaximumLength Value="10" />
+                        <CharLength Value="10" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="SALARY" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="8" />
+                        <NumericPrecision Value="8" />
+                        <NumericScale Value="2" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="COMMISSION_PCT" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="9" />
+                        <NumericPrecision Value="2" />
+                        <NumericScale Value="2" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="MANAGER_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="10" />
+                        <NumericPrecision Value="6" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="DEPARTMENT_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="11" />
+                        <NumericPrecision Value="4" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMOSchemaEntity_Table>
+              <DMOSchemaEntity_Table>
+                <N2KOracleEntity_Table>
+                  <N2KOracleEntity />
+                  <TableName Value="JOBS" />
+                  <RowCountInDB Value="19" />
+                  <IsIOT Value="False" />
+                  <IsEXT Value="False" />
+                  <IsMView Value="False" />
+                  <IsMViewLog Value="False" />
+                  <IsAQ Value="False" />
+                  <IsDR Value="False" />
+                  <IsBIN Value="False" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="JOB_ID" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="1" />
+                        <CharacterMaximumLength Value="10" />
+                        <CharLength Value="10" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="JOB_TITLE" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="35" />
+                        <CharLength Value="35" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="MIN_SALARY" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="3" />
+                        <NumericPrecision Value="6" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="MAX_SALARY" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="4" />
+                        <NumericPrecision Value="6" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="NOTES" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="5" />
+                        <CharacterMaximumLength Value="20" />
+                        <CharLength Value="20" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMOSchemaEntity_Table>
+              <DMOSchemaEntity_Table>
+                <N2KOracleEntity_Table>
+                  <N2KOracleEntity />
+                  <TableName Value="JOB_HISTORY" />
+                  <RowCountInDB Value="10" />
+                  <IsIOT Value="False" />
+                  <IsEXT Value="False" />
+                  <IsMView Value="False" />
+                  <IsMViewLog Value="False" />
+                  <IsAQ Value="False" />
+                  <IsDR Value="False" />
+                  <IsBIN Value="False" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="EMPLOYEE_ID" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="6" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="START_DATE" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="date" />
+                        <OrdinalPosition Value="2" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="END_DATE" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="date" />
+                        <OrdinalPosition Value="3" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="JOB_ID" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="4" />
+                        <CharacterMaximumLength Value="10" />
+                        <CharLength Value="10" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="DEPARTMENT_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="5" />
+                        <NumericPrecision Value="4" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMOSchemaEntity_Table>
+              <DMOSchemaEntity_Table>
+                <N2KOracleEntity_Table>
+                  <N2KOracleEntity />
+                  <TableName Value="LOCATIONS" />
+                  <RowCountInDB Value="23" />
+                  <IsIOT Value="False" />
+                  <IsEXT Value="False" />
+                  <IsMView Value="False" />
+                  <IsMViewLog Value="False" />
+                  <IsAQ Value="False" />
+                  <IsDR Value="False" />
+                  <IsBIN Value="False" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="LOCATION_ID" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="4" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="STREET_ADDRESS" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="40" />
+                        <CharLength Value="40" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="POSTAL_CODE" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="3" />
+                        <CharacterMaximumLength Value="12" />
+                        <CharLength Value="12" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="CITY" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="4" />
+                        <CharacterMaximumLength Value="30" />
+                        <CharLength Value="30" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="STATE_PROVINCE" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="5" />
+                        <CharacterMaximumLength Value="25" />
+                        <CharLength Value="25" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="COUNTRY_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="char" />
+                        <OrdinalPosition Value="6" />
+                        <CharacterMaximumLength Value="2" />
+                        <CharLength Value="2" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMOSchemaEntity_Table>
+              <DMOSchemaEntity_Table>
+                <N2KOracleEntity_Table>
+                  <N2KOracleEntity />
+                  <TableName Value="REGIONS" />
+                  <RowCountInDB Value="4" />
+                  <IsIOT Value="False" />
+                  <IsEXT Value="False" />
+                  <IsMView Value="False" />
+                  <IsMViewLog Value="False" />
+                  <IsAQ Value="False" />
+                  <IsDR Value="False" />
+                  <IsBIN Value="False" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="REGION_ID" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="0" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="REGION_NAME" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="25" />
+                        <CharLength Value="25" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMOSchemaEntity_Table>
+              <DMOSchemaEntity_Table>
+                <N2KOracleEntity_Table>
+                  <N2KOracleEntity />
+                  <TableName Value="redgate_schema_history" />
+                  <RowCountInDB Value="7" />
+                  <IsIOT Value="False" />
+                  <IsEXT Value="False" />
+                  <IsMView Value="False" />
+                  <IsMViewLog Value="False" />
+                  <IsAQ Value="False" />
+                  <IsDR Value="False" />
+                  <IsBIN Value="False" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="installed_rank" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="0" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="version" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="50" />
+                        <CharLength Value="50" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="description" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="3" />
+                        <CharacterMaximumLength Value="200" />
+                        <CharLength Value="200" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="type" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="4" />
+                        <CharacterMaximumLength Value="20" />
+                        <CharLength Value="20" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="script" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="5" />
+                        <CharacterMaximumLength Value="1000" />
+                        <CharLength Value="1000" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="checksum" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="6" />
+                        <NumericPrecision Value="0" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="installed_by" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="7" />
+                        <CharacterMaximumLength Value="100" />
+                        <CharLength Value="100" />
+                        <CharUsed Value="B" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="installed_on" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="unknown" />
+                        <OrdinalPosition Value="8" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="execution_time" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="9" />
+                        <NumericPrecision Value="0" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="success" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="10" />
+                        <NumericPrecision Value="1" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMOSchemaEntity_Table>
+            </SchemaTables>
+            <ExcludedTables />
+            <SchemaIndexes>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="CONTACTS_PK" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="CONTACTS" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="True" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="CONTACT_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="6" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="COUNTRY_C_ID_PKX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="COUNTRIES" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="COUNTRY_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="char" />
+                        <OrdinalPosition Value="1" />
+                        <CharacterMaximumLength Value="2" />
+                        <CharLength Value="-1" />
+                        <CharUsed Value="" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="DEPT_ID_PKX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="DEPARTMENTS" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="DEPARTMENT_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="4" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="DEPT_LOCATION_IX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="DEPARTMENTS" />
+                  <IsUnique Value="False" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="LOCATION_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="4" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="EMP_DEPARTMENT_IX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="EMPLOYEES" />
+                  <IsUnique Value="False" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="DEPARTMENT_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="4" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="EMP_EMAIL_UK" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="EMPLOYEES" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="EMAIL" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="1" />
+                        <CharacterMaximumLength Value="25" />
+                        <CharLength Value="-1" />
+                        <CharUsed Value="" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="EMP_EMP_ID_PKX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="EMPLOYEES" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="EMPLOYEE_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="6" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="EMP_JOB_IX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="EMPLOYEES" />
+                  <IsUnique Value="False" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="JOB_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="1" />
+                        <CharacterMaximumLength Value="10" />
+                        <CharLength Value="-1" />
+                        <CharUsed Value="" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="EMP_MANAGER_IX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="EMPLOYEES" />
+                  <IsUnique Value="False" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="MANAGER_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="6" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="EMP_NAME_IX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="EMPLOYEES" />
+                  <IsUnique Value="False" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="LAST_NAME" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="1" />
+                        <CharacterMaximumLength Value="25" />
+                        <CharLength Value="-1" />
+                        <CharUsed Value="" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="FIRST_NAME" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="20" />
+                        <CharLength Value="-1" />
+                        <CharUsed Value="" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="JOB_ID_PKX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="JOBS" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="JOB_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="1" />
+                        <CharacterMaximumLength Value="10" />
+                        <CharLength Value="-1" />
+                        <CharUsed Value="" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="JHIST_DEPT_IX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="JOB_HISTORY" />
+                  <IsUnique Value="False" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="DEPARTMENT_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="4" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="JHIST_EMP_IX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="JOB_HISTORY" />
+                  <IsUnique Value="False" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="EMPLOYEE_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="6" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="JHIST_ID_DATE_PKX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="JOB_HISTORY" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="EMPLOYEE_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="6" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="START_DATE" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="date" />
+                        <OrdinalPosition Value="2" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="JHIST_JOB_IX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="JOB_HISTORY" />
+                  <IsUnique Value="False" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="JOB_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="1" />
+                        <CharacterMaximumLength Value="10" />
+                        <CharLength Value="-1" />
+                        <CharUsed Value="" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="LOC_CITY_IX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="LOCATIONS" />
+                  <IsUnique Value="False" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="CITY" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="1" />
+                        <CharacterMaximumLength Value="30" />
+                        <CharLength Value="-1" />
+                        <CharUsed Value="" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="LOC_COUNTRY_IX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="LOCATIONS" />
+                  <IsUnique Value="False" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="COUNTRY_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="char" />
+                        <OrdinalPosition Value="1" />
+                        <CharacterMaximumLength Value="2" />
+                        <CharLength Value="-1" />
+                        <CharUsed Value="" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="LOC_ID_PKX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="LOCATIONS" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="LOCATION_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="4" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="LOC_STATE_PROV_IX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="LOCATIONS" />
+                  <IsUnique Value="False" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="STATE_PROVINCE" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="varchar2" />
+                        <OrdinalPosition Value="1" />
+                        <CharacterMaximumLength Value="25" />
+                        <CharLength Value="-1" />
+                        <CharUsed Value="" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="REG_ID_PKX" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="REGIONS" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="REGION_ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="0" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="redgate_schema_history_pk" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="redgate_schema_history" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="True" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="installed_rank" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="0" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+              <DMOSchemaEntity_Index>
+                <N2KOracleEntity_Index>
+                  <N2KOracleEntity />
+                  <IndexName Value="redgate_schema_history_s_idx" />
+                  <IndexSchemaName Value="HR" />
+                  <IndexTableName Value="redgate_schema_history" />
+                  <IsUnique Value="False" />
+                  <IsPrimaryKey Value="False" />
+                  <N2KOracleCollection_Column>
+                    <DMOSchemaEntity_Column>
+                      <N2KOracleEntity_Column>
+                        <N2KOracleEntity />
+                        <ColumnName Value="success" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="number" />
+                        <OrdinalPosition Value="1" />
+                        <NumericPrecision Value="1" />
+                        <NumericScale Value="0" />
+                      </N2KOracleEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMOSchemaEntity_Column>
+                  </N2KOracleCollection_Column>
+                </N2KOracleEntity_Index>
+              </DMOSchemaEntity_Index>
+            </SchemaIndexes>
+            <ExcludedIndexes />
+            <SchemaForeignKeys>
+              <DMOSchemaEntity_ForeignKey>
+                <N2KOracleEntity_ForeignKey>
+                  <N2KOracleEntity />
+                  <FKChildConstraintName Value="COUNTR_REG_FK" />
+                  <FKChildSchemaName Value="HR" />
+                  <FKChildTableName Value="COUNTRIES" />
+                  <FKParentConstraintName Value="REG_ID_PK" />
+                  <FKParentSchemaName Value="HR" />
+                  <FKParentTableName Value="REGIONS" />
+                  <ForeignKeyIsDisabled Value="False" />
+                  <N2KOracleCollection_PickedColumnPair>
+                    <N2KOracleEntity_PickedColumnPair>
+                      <N2KOracleEntity />
+                      <OrdinalPosition Value="1" />
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol1">
+                        <N2KOracleEntity />
+                        <ColumnName Value="REGION_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol2">
+                        <N2KOracleEntity />
+                        <ColumnName Value="REGION_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                    </N2KOracleEntity_PickedColumnPair>
+                  </N2KOracleCollection_PickedColumnPair>
+                </N2KOracleEntity_ForeignKey>
+              </DMOSchemaEntity_ForeignKey>
+              <DMOSchemaEntity_ForeignKey>
+                <N2KOracleEntity_ForeignKey>
+                  <N2KOracleEntity />
+                  <FKChildConstraintName Value="DEPT_LOC_FK" />
+                  <FKChildSchemaName Value="HR" />
+                  <FKChildTableName Value="DEPARTMENTS" />
+                  <FKParentConstraintName Value="LOC_ID_PK" />
+                  <FKParentSchemaName Value="HR" />
+                  <FKParentTableName Value="LOCATIONS" />
+                  <ForeignKeyIsDisabled Value="False" />
+                  <N2KOracleCollection_PickedColumnPair>
+                    <N2KOracleEntity_PickedColumnPair>
+                      <N2KOracleEntity />
+                      <OrdinalPosition Value="1" />
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol1">
+                        <N2KOracleEntity />
+                        <ColumnName Value="LOCATION_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol2">
+                        <N2KOracleEntity />
+                        <ColumnName Value="LOCATION_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                    </N2KOracleEntity_PickedColumnPair>
+                  </N2KOracleCollection_PickedColumnPair>
+                </N2KOracleEntity_ForeignKey>
+              </DMOSchemaEntity_ForeignKey>
+              <DMOSchemaEntity_ForeignKey>
+                <N2KOracleEntity_ForeignKey>
+                  <N2KOracleEntity />
+                  <FKChildConstraintName Value="DEPT_MGR_FK" />
+                  <FKChildSchemaName Value="HR" />
+                  <FKChildTableName Value="DEPARTMENTS" />
+                  <FKParentConstraintName Value="EMP_EMP_ID_PK" />
+                  <FKParentSchemaName Value="HR" />
+                  <FKParentTableName Value="EMPLOYEES" />
+                  <ForeignKeyIsDisabled Value="False" />
+                  <N2KOracleCollection_PickedColumnPair>
+                    <N2KOracleEntity_PickedColumnPair>
+                      <N2KOracleEntity />
+                      <OrdinalPosition Value="1" />
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol1">
+                        <N2KOracleEntity />
+                        <ColumnName Value="MANAGER_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol2">
+                        <N2KOracleEntity />
+                        <ColumnName Value="EMPLOYEE_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                    </N2KOracleEntity_PickedColumnPair>
+                  </N2KOracleCollection_PickedColumnPair>
+                </N2KOracleEntity_ForeignKey>
+              </DMOSchemaEntity_ForeignKey>
+              <DMOSchemaEntity_ForeignKey>
+                <N2KOracleEntity_ForeignKey>
+                  <N2KOracleEntity />
+                  <FKChildConstraintName Value="EMP_DEPT_FK" />
+                  <FKChildSchemaName Value="HR" />
+                  <FKChildTableName Value="EMPLOYEES" />
+                  <FKParentConstraintName Value="DEPT_ID_PK" />
+                  <FKParentSchemaName Value="HR" />
+                  <FKParentTableName Value="DEPARTMENTS" />
+                  <ForeignKeyIsDisabled Value="False" />
+                  <N2KOracleCollection_PickedColumnPair>
+                    <N2KOracleEntity_PickedColumnPair>
+                      <N2KOracleEntity />
+                      <OrdinalPosition Value="1" />
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol1">
+                        <N2KOracleEntity />
+                        <ColumnName Value="DEPARTMENT_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol2">
+                        <N2KOracleEntity />
+                        <ColumnName Value="DEPARTMENT_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                    </N2KOracleEntity_PickedColumnPair>
+                  </N2KOracleCollection_PickedColumnPair>
+                </N2KOracleEntity_ForeignKey>
+              </DMOSchemaEntity_ForeignKey>
+              <DMOSchemaEntity_ForeignKey>
+                <N2KOracleEntity_ForeignKey>
+                  <N2KOracleEntity />
+                  <FKChildConstraintName Value="EMP_JOB_FK" />
+                  <FKChildSchemaName Value="HR" />
+                  <FKChildTableName Value="EMPLOYEES" />
+                  <FKParentConstraintName Value="JOB_ID_PK" />
+                  <FKParentSchemaName Value="HR" />
+                  <FKParentTableName Value="JOBS" />
+                  <ForeignKeyIsDisabled Value="False" />
+                  <N2KOracleCollection_PickedColumnPair>
+                    <N2KOracleEntity_PickedColumnPair>
+                      <N2KOracleEntity />
+                      <OrdinalPosition Value="1" />
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol1">
+                        <N2KOracleEntity />
+                        <ColumnName Value="JOB_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol2">
+                        <N2KOracleEntity />
+                        <ColumnName Value="JOB_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                    </N2KOracleEntity_PickedColumnPair>
+                  </N2KOracleCollection_PickedColumnPair>
+                </N2KOracleEntity_ForeignKey>
+              </DMOSchemaEntity_ForeignKey>
+              <DMOSchemaEntity_ForeignKey>
+                <N2KOracleEntity_ForeignKey>
+                  <N2KOracleEntity />
+                  <FKChildConstraintName Value="EMP_MANAGER_FK" />
+                  <FKChildSchemaName Value="HR" />
+                  <FKChildTableName Value="EMPLOYEES" />
+                  <FKParentConstraintName Value="EMP_EMP_ID_PK" />
+                  <FKParentSchemaName Value="HR" />
+                  <FKParentTableName Value="EMPLOYEES" />
+                  <ForeignKeyIsDisabled Value="False" />
+                  <N2KOracleCollection_PickedColumnPair>
+                    <N2KOracleEntity_PickedColumnPair>
+                      <N2KOracleEntity />
+                      <OrdinalPosition Value="1" />
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol1">
+                        <N2KOracleEntity />
+                        <ColumnName Value="MANAGER_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol2">
+                        <N2KOracleEntity />
+                        <ColumnName Value="EMPLOYEE_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                    </N2KOracleEntity_PickedColumnPair>
+                  </N2KOracleCollection_PickedColumnPair>
+                </N2KOracleEntity_ForeignKey>
+              </DMOSchemaEntity_ForeignKey>
+              <DMOSchemaEntity_ForeignKey>
+                <N2KOracleEntity_ForeignKey>
+                  <N2KOracleEntity />
+                  <FKChildConstraintName Value="JHIST_DEPT_FK" />
+                  <FKChildSchemaName Value="HR" />
+                  <FKChildTableName Value="JOB_HISTORY" />
+                  <FKParentConstraintName Value="DEPT_ID_PK" />
+                  <FKParentSchemaName Value="HR" />
+                  <FKParentTableName Value="DEPARTMENTS" />
+                  <ForeignKeyIsDisabled Value="False" />
+                  <N2KOracleCollection_PickedColumnPair>
+                    <N2KOracleEntity_PickedColumnPair>
+                      <N2KOracleEntity />
+                      <OrdinalPosition Value="1" />
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol1">
+                        <N2KOracleEntity />
+                        <ColumnName Value="DEPARTMENT_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol2">
+                        <N2KOracleEntity />
+                        <ColumnName Value="DEPARTMENT_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                    </N2KOracleEntity_PickedColumnPair>
+                  </N2KOracleCollection_PickedColumnPair>
+                </N2KOracleEntity_ForeignKey>
+              </DMOSchemaEntity_ForeignKey>
+              <DMOSchemaEntity_ForeignKey>
+                <N2KOracleEntity_ForeignKey>
+                  <N2KOracleEntity />
+                  <FKChildConstraintName Value="JHIST_EMP_FK" />
+                  <FKChildSchemaName Value="HR" />
+                  <FKChildTableName Value="JOB_HISTORY" />
+                  <FKParentConstraintName Value="EMP_EMP_ID_PK" />
+                  <FKParentSchemaName Value="HR" />
+                  <FKParentTableName Value="EMPLOYEES" />
+                  <ForeignKeyIsDisabled Value="False" />
+                  <N2KOracleCollection_PickedColumnPair>
+                    <N2KOracleEntity_PickedColumnPair>
+                      <N2KOracleEntity />
+                      <OrdinalPosition Value="1" />
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol1">
+                        <N2KOracleEntity />
+                        <ColumnName Value="EMPLOYEE_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol2">
+                        <N2KOracleEntity />
+                        <ColumnName Value="EMPLOYEE_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                    </N2KOracleEntity_PickedColumnPair>
+                  </N2KOracleCollection_PickedColumnPair>
+                </N2KOracleEntity_ForeignKey>
+              </DMOSchemaEntity_ForeignKey>
+              <DMOSchemaEntity_ForeignKey>
+                <N2KOracleEntity_ForeignKey>
+                  <N2KOracleEntity />
+                  <FKChildConstraintName Value="JHIST_JOB_FK" />
+                  <FKChildSchemaName Value="HR" />
+                  <FKChildTableName Value="JOB_HISTORY" />
+                  <FKParentConstraintName Value="JOB_ID_PK" />
+                  <FKParentSchemaName Value="HR" />
+                  <FKParentTableName Value="JOBS" />
+                  <ForeignKeyIsDisabled Value="False" />
+                  <N2KOracleCollection_PickedColumnPair>
+                    <N2KOracleEntity_PickedColumnPair>
+                      <N2KOracleEntity />
+                      <OrdinalPosition Value="1" />
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol1">
+                        <N2KOracleEntity />
+                        <ColumnName Value="JOB_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol2">
+                        <N2KOracleEntity />
+                        <ColumnName Value="JOB_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                    </N2KOracleEntity_PickedColumnPair>
+                  </N2KOracleCollection_PickedColumnPair>
+                </N2KOracleEntity_ForeignKey>
+              </DMOSchemaEntity_ForeignKey>
+              <DMOSchemaEntity_ForeignKey>
+                <N2KOracleEntity_ForeignKey>
+                  <N2KOracleEntity />
+                  <FKChildConstraintName Value="LOC_C_ID_FK" />
+                  <FKChildSchemaName Value="HR" />
+                  <FKChildTableName Value="LOCATIONS" />
+                  <FKParentConstraintName Value="COUNTRY_C_ID_PK" />
+                  <FKParentSchemaName Value="HR" />
+                  <FKParentTableName Value="COUNTRIES" />
+                  <ForeignKeyIsDisabled Value="False" />
+                  <N2KOracleCollection_PickedColumnPair>
+                    <N2KOracleEntity_PickedColumnPair>
+                      <N2KOracleEntity />
+                      <OrdinalPosition Value="1" />
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol1">
+                        <N2KOracleEntity />
+                        <ColumnName Value="COUNTRY_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                      <N2KOracleEntity_PickedColumn OBJNAME="PickedCol2">
+                        <N2KOracleEntity />
+                        <ColumnName Value="COUNTRY_ID" />
+                        <ColumnFullDataType Value="&lt;unknown datatype&gt;" />
+                        <ColumnConversionWrapper Value="" />
+                        <ColumnConversionEnabled Value="False" />
+                        <OrdinalPosition Value="1" />
+                        <DataType Value="unknown" />
+                        <IsPseudoColumn Value="False" />
+                        <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                      </N2KOracleEntity_PickedColumn>
+                    </N2KOracleEntity_PickedColumnPair>
+                  </N2KOracleCollection_PickedColumnPair>
+                </N2KOracleEntity_ForeignKey>
+              </DMOSchemaEntity_ForeignKey>
+            </SchemaForeignKeys>
+            <SchemaTriggers>
+              <DMOSchemaEntity_Trigger>
+                <N2KOracleEntity_Trigger>
+                  <N2KOracleEntity />
+                  <TriggerName Value="UPDATE_JOB_HISTORY" />
+                  <TriggerSchemaName Value="HR" />
+                  <TriggerTableName Value="EMPLOYEES" />
+                  <TriggerIsDisabled Value="False" />
+                </N2KOracleEntity_Trigger>
+              </DMOSchemaEntity_Trigger>
+            </SchemaTriggers>
+            <SchemaIndexWithTableLists />
+          </N2KOracleEntity_Login>
+        </DMOSchemaEntity_Login>
+        <IDColName Value="Data MaskerTmpIDCol" />
+        <PKNamePrefix Value="PK_DataMaskerTmp_" />
+        <StatsTabPrefix Value="DMOSTAT_" />
+        <StatsInTableDB Value="True" />
+        <StatsSchemaName Value="" />
+      </RuleController>
+      <RuleSubstitution>
+        <DMORule>
+          <RuleBlock Value="00" />
+          <RuleNumber Value="0004" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <SerializedParentRuleID Value="01-0001" />
+          <Description Value="names lastnames" />
+          <ExpandedState Value="True" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+        </DMORule>
+        <TargetTableName Value="CONTACTS" />
+        <WhereClauseAndSamplingContainer>
+          <WhereClause Value="where ..." />
+          <WhereClauseMode Value="Where_NotNull" />
+          <WantSamplePercent Value="False" />
+          <SamplePercentage Value="100.00" />
+          <WantRowLimit Value="False" />
+          <RowLimit Value="1000" />
+          <WantDistinctSet Value="False" />
+          <ForceInLineNullSkips Value="False" />
+        </WhereClauseAndSamplingContainer>
+        <RangeOptionsContainer>
+          <RangeClause Value="" />
+          <RangeLow Value="" />
+          <RangeHigh Value="" />
+        </RangeOptionsContainer>
+        <DMOPickedColumnAndDataSetCollection>
+          <DMOPickedColumnAndDataSet>
+            <N2KOracleEntity_PickedColumn>
+              <N2KOracleEntity />
+              <ColumnName Value="FIRST_NAME" />
+              <ColumnFullDataType Value="varchar2(20)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="2" />
+              <DataType Value="varchar2" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KOracleEntity_PickedColumn>
+            <DataSet_FNAMES>
+              <UpperCaseText Value="False" />
+              <UniqueValuesOnly Value="False" />
+            </DataSet_FNAMES>
+          </DMOPickedColumnAndDataSet>
+          <DMOPickedColumnAndDataSet>
+            <N2KOracleEntity_PickedColumn>
+              <N2KOracleEntity />
+              <ColumnName Value="LAST_NAME" />
+              <ColumnFullDataType Value="varchar2(25)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="3" />
+              <DataType Value="varchar2" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KOracleEntity_PickedColumn>
+            <DataSet_LNAMDE>
+              <UpperCaseText Value="False" />
+              <UniqueValuesOnly Value="False" />
+            </DataSet_LNAMDE>
+          </DMOPickedColumnAndDataSet>
+          <DMOPickedColumnAndDataSet>
+            <N2KOracleEntity_PickedColumn>
+              <N2KOracleEntity />
+              <ColumnName Value="ADDRESS1" />
+              <ColumnFullDataType Value="varchar2(30)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="4" />
+              <DataType Value="varchar2" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KOracleEntity_PickedColumn>
+            <DataSet_STADDR>
+              <UpperCaseText Value="False" />
+              <NeverAbbreviate Value="True" />
+              <NamesOfStreetsOnly Value="False" />
+              <DataSetFilename Value="random_street_addr.dmds" />
+            </DataSet_STADDR>
+          </DMOPickedColumnAndDataSet>
+          <DMOPickedColumnAndDataSet>
+            <N2KOracleEntity_PickedColumn>
+              <N2KOracleEntity />
+              <ColumnName Value="ADDRESS2" />
+              <ColumnFullDataType Value="varchar2(30)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="5" />
+              <DataType Value="varchar2" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KOracleEntity_PickedColumn>
+            <DataSet_UKPCOR>
+              <CorrelatedFieldTown Value="True" />
+              <CorrelatedFieldCounty Value="False" />
+              <CorrelatedFieldCountry Value="False" />
+              <CorrelatedFieldPostCode Value="False" />
+              <CorrelatedFieldLatitude Value="False" />
+              <CorrelatedFieldLongitude Value="False" />
+              <IncludeCountryCI Value="True" />
+              <IncludeCountryEN Value="True" />
+              <IncludeCountryIM Value="True" />
+              <IncludeCountryNI Value="True" />
+              <IncludeCountrySC Value="True" />
+              <IncludeCountryWA Value="True" />
+              <NoSpacePostCode Value="False" />
+            </DataSet_UKPCOR>
+          </DMOPickedColumnAndDataSet>
+          <DMOPickedColumnAndDataSet>
+            <N2KOracleEntity_PickedColumn>
+              <N2KOracleEntity />
+              <ColumnName Value="ADDRESS3" />
+              <ColumnFullDataType Value="varchar2(30)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="6" />
+              <DataType Value="varchar2" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KOracleEntity_PickedColumn>
+            <DataSet_UKPCOR>
+              <CorrelatedFieldTown Value="False" />
+              <CorrelatedFieldCounty Value="True" />
+              <CorrelatedFieldCountry Value="False" />
+              <CorrelatedFieldPostCode Value="False" />
+              <CorrelatedFieldLatitude Value="False" />
+              <CorrelatedFieldLongitude Value="False" />
+              <IncludeCountryCI Value="True" />
+              <IncludeCountryEN Value="True" />
+              <IncludeCountryIM Value="True" />
+              <IncludeCountryNI Value="True" />
+              <IncludeCountrySC Value="True" />
+              <IncludeCountryWA Value="True" />
+              <NoSpacePostCode Value="False" />
+            </DataSet_UKPCOR>
+          </DMOPickedColumnAndDataSet>
+          <DMOPickedColumnAndDataSet>
+            <N2KOracleEntity_PickedColumn>
+              <N2KOracleEntity />
+              <ColumnName Value="ZIPCODE" />
+              <ColumnFullDataType Value="varchar2(10)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="7" />
+              <DataType Value="varchar2" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KOracleEntity_PickedColumn>
+            <DataSet_UKPCOR>
+              <CorrelatedFieldTown Value="False" />
+              <CorrelatedFieldCounty Value="False" />
+              <CorrelatedFieldCountry Value="False" />
+              <CorrelatedFieldPostCode Value="True" />
+              <CorrelatedFieldLatitude Value="False" />
+              <CorrelatedFieldLongitude Value="False" />
+              <IncludeCountryCI Value="True" />
+              <IncludeCountryEN Value="True" />
+              <IncludeCountryIM Value="True" />
+              <IncludeCountryNI Value="True" />
+              <IncludeCountrySC Value="True" />
+              <IncludeCountryWA Value="True" />
+              <NoSpacePostCode Value="False" />
+            </DataSet_UKPCOR>
+          </DMOPickedColumnAndDataSet>
+          <DMOPickedColumnAndDataSet>
+            <N2KOracleEntity_PickedColumn>
+              <N2KOracleEntity />
+              <ColumnName Value="PHONE_NUMBER" />
+              <ColumnFullDataType Value="varchar2(20)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="9" />
+              <DataType Value="varchar2" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KOracleEntity_PickedColumn>
+            <DataSet_UKTELE>
+              <InvalidChecksum Value="False" />
+              <DigitsOnly Value="True" />
+              <SpaceSeparation Value="False" />
+              <NoAreaCode Value="False" />
+            </DataSet_UKTELE>
+          </DMOPickedColumnAndDataSet>
+        </DMOPickedColumnAndDataSetCollection>
+      </RuleSubstitution>
+      <RuleRowInternal>
+        <DMORule>
+          <RuleBlock Value="00" />
+          <RuleNumber Value="0005" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <SerializedParentRuleID Value="00-0004" />
+          <Description Value="Email Update" />
+          <ExpandedState Value="False" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+        </DMORule>
+        <TargetTableName Value="CONTACTS" />
+        <TargetColumnName Value="EMAIL" />
+        <ReplacementClause Value="substr(FIRST_NAME,0,1)||'.'||substr(LAST_NAME,0,10)||'@email.net'" />
+        <UseFastSinglePass Value="False" />
+        <UseAdvancedReplaceClause Value="False" />
+        <WhereClauseAndSamplingContainer>
+          <WhereClause Value="where ..." />
+          <WhereClauseMode Value="Where_NotNull" />
+          <WantSamplePercent Value="False" />
+          <SamplePercentage Value="100.00" />
+          <WantRowLimit Value="False" />
+          <RowLimit Value="1000" />
+          <WantDistinctSet Value="False" />
+          <ForceInLineNullSkips Value="False" />
+        </WhereClauseAndSamplingContainer>
+        <RangeOptionsContainer>
+          <RangeClause Value="" />
+          <RangeLow Value="" />
+          <RangeHigh Value="" />
+        </RangeOptionsContainer>
+        <DMOPickedParamAndDataSetCollection>
+          <DMOPickedParamAndDataSet>
+            <N2KOracleEntity_PickedParam>
+              <N2KOracleEntity />
+              <ParamNumber Value="1" />
+              <ParamName Value="DMOPARAM1" />
+            </N2KOracleEntity_PickedParam>
+            <DataSet_PARGIB>
+              <MinChars Value="2" />
+              <MaxChars Value="5" />
+              <MaxWordLen Value="5" />
+            </DataSet_PARGIB>
+          </DMOPickedParamAndDataSet>
+        </DMOPickedParamAndDataSetCollection>
+      </RuleRowInternal>
+      <RuleTableToTable>
+        <DMORule>
+          <RuleBlock Value="00" />
+          <RuleNumber Value="0006" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <SerializedParentRuleID Value="01-0001" />
+          <Description Value="Table-to-Table" />
+          <ExpandedState Value="False" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+        </DMORule>
+        <SourceTableName Value="CONTACTS" />
+        <TargetTableName Value="CONTACTS_NOTES" />
+        <TargetSchemaName Value="HR" />
+        <PermitSrcSideDuplicates Value="False" />
+        <SingleStatmentModeActive Value="False" />
+        <SourceTableIsDriver Value="True" />
+        <TargetTableIsDriver Value="False" />
+        <ApplyWhereClauseToTgt Value="False" />
+        <WhereClauseEnabled Value="False" />
+        <WhereClause Value="WHERE ..." />
+        <SyncManagerRuleUsage Value="SYNCMGRUSAGE_NONE" />
+        <JoinColumnCollection>
+          <N2KOracleEntity_PickedColumnPair>
+            <N2KOracleEntity />
+            <OrdinalPosition Value="-1" />
+            <N2KOracleEntity_PickedColumn OBJNAME="PickedCol1">
+              <N2KOracleEntity />
+              <ColumnName Value="CONTACT_ID" />
+              <ColumnFullDataType Value="number(6)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="-1" />
+              <DataType Value="unknown" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KOracleEntity_PickedColumn>
+            <N2KOracleEntity_PickedColumn OBJNAME="PickedCol2">
+              <N2KOracleEntity />
+              <ColumnName Value="CONTACT_ID" />
+              <ColumnFullDataType Value="number(6)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="-1" />
+              <DataType Value="unknown" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KOracleEntity_PickedColumn>
+          </N2KOracleEntity_PickedColumnPair>
+        </JoinColumnCollection>
+        <SyncColumnCollection>
+          <N2KOracleEntity_PickedColumnPair>
+            <N2KOracleEntity />
+            <OrdinalPosition Value="-1" />
+            <N2KOracleEntity_PickedColumn OBJNAME="PickedCol1">
+              <N2KOracleEntity />
+              <ColumnName Value="FIRST_NAME" />
+              <ColumnFullDataType Value="varchar2(20)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="-1" />
+              <DataType Value="unknown" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KOracleEntity_PickedColumn>
+            <N2KOracleEntity_PickedColumn OBJNAME="PickedCol2">
+              <N2KOracleEntity />
+              <ColumnName Value="FIRST_NAME" />
+              <ColumnFullDataType Value="varchar2(20)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="-1" />
+              <DataType Value="unknown" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KOracleEntity_PickedColumn>
+          </N2KOracleEntity_PickedColumnPair>
+          <N2KOracleEntity_PickedColumnPair>
+            <N2KOracleEntity />
+            <OrdinalPosition Value="-1" />
+            <N2KOracleEntity_PickedColumn OBJNAME="PickedCol1">
+              <N2KOracleEntity />
+              <ColumnName Value="LAST_NAME" />
+              <ColumnFullDataType Value="varchar2(25)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="-1" />
+              <DataType Value="unknown" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KOracleEntity_PickedColumn>
+            <N2KOracleEntity_PickedColumn OBJNAME="PickedCol2">
+              <N2KOracleEntity />
+              <ColumnName Value="LAST_NAME" />
+              <ColumnFullDataType Value="varchar2(25)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="-1" />
+              <DataType Value="unknown" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KOracleEntity_PickedColumn>
+          </N2KOracleEntity_PickedColumnPair>
+        </SyncColumnCollection>
+      </RuleTableToTable>
+    </DMORuleBindingList>
+  </DMOSetContainer>
+</DMOSetContainer_MaskingSet>
