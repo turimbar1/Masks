@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <!--Data Masker DMSMasking Set-->
 <DMSSetContainer_MaskingSet>
-  <DMSVersion Value="6.0.10.161" />
+  <DMSVersion Value="7.1.7.6556" />
+  <MaskingSetId>6OY8Jzo4CUqENR3/IjuPOD49rJIe3+xJtl/6SH7rWHs=</MaskingSetId>
   <MaskingSetOptions>
     <maskingSetNotesTitle Value="Comments and Notes" />
     <maskingSetNotesComments Value="Comments and notes are displayed here.&#xD;&#xA;&#xD;&#xA;Use the Edit button on the Misc. Setup tab to change this information or to prevent it from being shown." />
     <ShowNotesOnSetLoad Value="False" />
-    <NoShowRhino Value="False" />
     <NoShowSaveFeedback Value="False" />
     <TestConnBeforeRunningSet Value="False" />
     <EnableANDClausesOnT2TRules Value="False" />
@@ -16,7 +16,9 @@
     <PermitCrossSchemaSyncMgrRules Value="False" />
     <PermitCrossSchemaT2TRules Value="True" />
     <Treat19000101AsEmptyDate Value="False" />
+    <LegacyPerformanceMode Value="True" />
     <AutoCreateStatsTables Value="True" />
+    <AutoTruncateStatsTables Value="True" />
     <EnableDeltaMarkers Value="True" />
     <PutSetNameInWindowTitle Value="False" />
     <CreateNewLogFileOnEachRun Value="False" />
@@ -42,14 +44,15 @@
           <IsBulk Value="False" />
           <WantMultipleActiveResultSets Value="False" />
           <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="00-0000-00" />
           <Description Value="" />
-          <ExpandedState Value="False" />
+          <ExpandedState Value="True" />
           <ForceIsNullsOff Value="False" />
           <UserSpecifiedRIDIndexEnabled Value="False" />
           <UserSpecifiedRIDIndex Value="" />
         </DMSRule>
-        <DMSSchemaEntity_Login NS="DMS_Common" AS="DMSO">
+        <DMSSchemaEntity_Login>
           <N2KSQLServerEntity_Login>
             <N2KSQLServerEntity />
             <ServerName Value="US-LT-ANDREWP\SQL2016" />
@@ -60,10 +63,9 @@
             <ConnectionTimeout Value="15" />
             <DatabaseName Value="adventureworks2012" />
             <SchemaName Value="Person" />
-            <DBVersion Value="SSERVERVERSION2012" />
             <OnlyTablesWithRowsWereFetched Value="False" />
             <SchemaTables>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="Address" />
@@ -71,7 +73,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="AddressID" />
@@ -84,7 +86,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="AddressLine1" />
@@ -98,7 +100,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="AddressLine2" />
@@ -112,7 +114,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="City" />
@@ -126,7 +128,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="StateProvinceID" />
@@ -139,7 +141,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PostalCode" />
@@ -153,7 +155,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="SpatialLocation" />
@@ -166,7 +168,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -179,7 +181,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -197,7 +199,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="AddressType" />
@@ -205,7 +207,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="AddressTypeID" />
@@ -218,7 +220,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Name" />
@@ -232,7 +234,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -245,7 +247,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -263,7 +265,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="BusinessEntity" />
@@ -271,7 +273,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -284,7 +286,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -297,7 +299,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -315,7 +317,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="BusinessEntityAddress" />
@@ -323,7 +325,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -336,7 +338,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="AddressID" />
@@ -349,7 +351,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="AddressTypeID" />
@@ -362,7 +364,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -375,7 +377,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -393,7 +395,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="BusinessEntityContact" />
@@ -401,7 +403,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -414,7 +416,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PersonID" />
@@ -427,7 +429,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ContactTypeID" />
@@ -440,7 +442,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -453,7 +455,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -471,7 +473,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="ContactType" />
@@ -479,7 +481,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ContactTypeID" />
@@ -492,7 +494,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Name" />
@@ -506,7 +508,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -524,7 +526,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="CountryRegion" />
@@ -532,7 +534,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="CountryRegionCode" />
@@ -546,7 +548,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Name" />
@@ -560,7 +562,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -578,7 +580,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="EmailAddress" />
@@ -586,7 +588,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -599,7 +601,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="EmailAddressID" />
@@ -612,7 +614,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="EmailAddress" />
@@ -626,7 +628,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -639,7 +641,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -657,7 +659,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="Password" />
@@ -665,7 +667,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -678,7 +680,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PasswordHash" />
@@ -692,7 +694,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PasswordSalt" />
@@ -706,7 +708,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -719,7 +721,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -737,7 +739,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="Person" />
@@ -745,7 +747,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -758,7 +760,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PersonType" />
@@ -772,7 +774,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="NameStyle" />
@@ -785,7 +787,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Title" />
@@ -799,7 +801,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="FirstName" />
@@ -813,7 +815,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="MiddleName" />
@@ -827,7 +829,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="LastName" />
@@ -841,7 +843,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Suffix" />
@@ -855,7 +857,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="EmailPromotion" />
@@ -868,7 +870,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="AdditionalContactInfo" />
@@ -881,7 +883,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Demographics" />
@@ -894,7 +896,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -907,7 +909,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -925,7 +927,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="PersonPhone" />
@@ -933,7 +935,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -946,7 +948,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PhoneNumber" />
@@ -960,7 +962,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PhoneNumberTypeID" />
@@ -973,7 +975,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -991,7 +993,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="PhoneNumberType" />
@@ -999,7 +1001,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PhoneNumberTypeID" />
@@ -1012,7 +1014,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Name" />
@@ -1026,7 +1028,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -1044,7 +1046,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="StateProvince" />
@@ -1052,7 +1054,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="StateProvinceID" />
@@ -1065,7 +1067,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="StateProvinceCode" />
@@ -1079,7 +1081,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="CountryRegionCode" />
@@ -1093,7 +1095,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="IsOnlyStateProvinceFlag" />
@@ -1106,7 +1108,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Name" />
@@ -1120,7 +1122,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="TerritoryID" />
@@ -1133,7 +1135,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -1146,7 +1148,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -1167,7 +1169,7 @@
             </SchemaTables>
             <ExcludedTables />
             <SchemaIndexes>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_Address_rowguid" />
@@ -1175,7 +1177,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -1191,7 +1193,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_Address_AddressLine1_AddressLine2_City_StateProvinceID_PostalCode" />
@@ -1199,7 +1201,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="AddressLine1" />
@@ -1213,7 +1215,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="AddressLine2" />
@@ -1227,7 +1229,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="City" />
@@ -1241,7 +1243,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="StateProvinceID" />
@@ -1254,7 +1256,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PostalCode" />
@@ -1271,7 +1273,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_Address_StateProvinceID" />
@@ -1279,7 +1281,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="StateProvinceID" />
@@ -1295,7 +1297,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_Address_AddressID" />
@@ -1303,7 +1305,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="AddressID" />
@@ -1319,7 +1321,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_AddressType_Name" />
@@ -1327,7 +1329,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Name" />
@@ -1344,7 +1346,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_AddressType_rowguid" />
@@ -1352,7 +1354,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -1368,7 +1370,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_AddressType_AddressTypeID" />
@@ -1376,7 +1378,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="AddressTypeID" />
@@ -1392,7 +1394,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_BusinessEntity_rowguid" />
@@ -1400,7 +1402,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -1416,7 +1418,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_BusinessEntity_BusinessEntityID" />
@@ -1424,7 +1426,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -1440,7 +1442,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_BusinessEntityAddress_rowguid" />
@@ -1448,7 +1450,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -1464,7 +1466,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_BusinessEntityAddress_AddressID" />
@@ -1472,7 +1474,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="AddressID" />
@@ -1488,7 +1490,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_BusinessEntityAddress_AddressTypeID" />
@@ -1496,7 +1498,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="AddressTypeID" />
@@ -1512,7 +1514,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_BusinessEntityAddress_BusinessEntityID_AddressID_AddressTypeID" />
@@ -1520,7 +1522,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -1533,7 +1535,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="AddressID" />
@@ -1546,7 +1548,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="AddressTypeID" />
@@ -1562,7 +1564,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_BusinessEntityContact_rowguid" />
@@ -1570,7 +1572,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -1586,7 +1588,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_BusinessEntityContact_ContactTypeID" />
@@ -1594,7 +1596,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ContactTypeID" />
@@ -1610,7 +1612,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_BusinessEntityContact_PersonID" />
@@ -1618,7 +1620,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PersonID" />
@@ -1634,7 +1636,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_BusinessEntityContact_BusinessEntityID_PersonID_ContactTypeID" />
@@ -1642,7 +1644,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -1655,7 +1657,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PersonID" />
@@ -1668,7 +1670,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ContactTypeID" />
@@ -1684,7 +1686,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_ContactType_Name" />
@@ -1692,7 +1694,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Name" />
@@ -1709,7 +1711,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_ContactType_ContactTypeID" />
@@ -1717,7 +1719,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ContactTypeID" />
@@ -1733,7 +1735,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_CountryRegion_Name" />
@@ -1741,7 +1743,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Name" />
@@ -1758,7 +1760,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_CountryRegion_CountryRegionCode" />
@@ -1766,7 +1768,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="CountryRegionCode" />
@@ -1783,7 +1785,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_DMS_AUDITTAB" />
@@ -1791,7 +1793,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="runid" />
@@ -1805,7 +1807,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ruleid" />
@@ -1822,7 +1824,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_DMSSTAT_RSTATS" />
@@ -1830,7 +1832,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="runid" />
@@ -1844,7 +1846,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ruleid" />
@@ -1861,7 +1863,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_DMSSTAT_TSTATS_A" />
@@ -1869,7 +1871,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="runid" />
@@ -1883,7 +1885,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ruleid" />
@@ -1900,7 +1902,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_EmailAddress_EmailAddress" />
@@ -1908,7 +1910,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="EmailAddress" />
@@ -1925,7 +1927,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_EmailAddress_BusinessEntityID_EmailAddressID" />
@@ -1933,7 +1935,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -1946,7 +1948,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="EmailAddressID" />
@@ -1962,7 +1964,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_Password_BusinessEntityID" />
@@ -1970,7 +1972,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -1986,7 +1988,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_Person_rowguid" />
@@ -1994,7 +1996,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -2010,7 +2012,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_Person_LastName_FirstName_MiddleName" />
@@ -2018,7 +2020,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="LastName" />
@@ -2032,7 +2034,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="FirstName" />
@@ -2046,7 +2048,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="MiddleName" />
@@ -2063,7 +2065,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_Person_BusinessEntityID" />
@@ -2071,7 +2073,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -2087,7 +2089,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_PersonPhone_PhoneNumber" />
@@ -2095,7 +2097,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PhoneNumber" />
@@ -2112,7 +2114,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_PersonPhone_BusinessEntityID_PhoneNumber_PhoneNumberTypeID" />
@@ -2120,7 +2122,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -2133,7 +2135,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PhoneNumber" />
@@ -2147,7 +2149,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PhoneNumberTypeID" />
@@ -2163,7 +2165,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_PhoneNumberType_PhoneNumberTypeID" />
@@ -2171,7 +2173,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PhoneNumberTypeID" />
@@ -2187,7 +2189,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_StateProvince_Name" />
@@ -2195,7 +2197,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Name" />
@@ -2212,7 +2214,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_StateProvince_rowguid" />
@@ -2220,7 +2222,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -2236,7 +2238,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_StateProvince_StateProvinceCode_CountryRegionCode" />
@@ -2244,7 +2246,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="StateProvinceCode" />
@@ -2258,7 +2260,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="CountryRegionCode" />
@@ -2275,7 +2277,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_StateProvince_StateProvinceID" />
@@ -2283,7 +2285,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="StateProvinceID" />
@@ -2299,7 +2301,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_vStateProvinceCountryRegion" />
@@ -2307,7 +2309,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="StateProvinceID" />
@@ -2320,7 +2322,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="CountryRegionCode" />
@@ -2340,7 +2342,7 @@
             </SchemaIndexes>
             <ExcludedIndexes />
             <SchemaForeignKeys>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_Address_StateProvince_StateProvinceID" />
@@ -2380,7 +2382,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_BusinessEntityAddress_Address_AddressID" />
@@ -2420,7 +2422,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_BusinessEntityAddress_AddressType_AddressTypeID" />
@@ -2460,7 +2462,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" />
@@ -2500,7 +2502,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_BusinessEntityContact_BusinessEntity_BusinessEntityID" />
@@ -2540,7 +2542,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_BusinessEntityContact_ContactType_ContactTypeID" />
@@ -2580,7 +2582,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_BusinessEntityContact_Person_PersonID" />
@@ -2620,7 +2622,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_EmailAddress_Person_BusinessEntityID" />
@@ -2660,7 +2662,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_Password_Person_BusinessEntityID" />
@@ -2700,7 +2702,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_Person_BusinessEntity_BusinessEntityID" />
@@ -2740,7 +2742,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_PersonPhone_Person_BusinessEntityID" />
@@ -2780,7 +2782,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" />
@@ -2820,7 +2822,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_StateProvince_CountryRegion_CountryRegionCode" />
@@ -2860,7 +2862,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_StateProvince_SalesTerritory_TerritoryID" />
@@ -2902,7 +2904,7 @@
               </DMSSchemaEntity_ForeignKey>
             </SchemaForeignKeys>
             <SchemaTriggers>
-              <DMSSchemaEntity_Trigger NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Trigger>
                 <N2KSQLServerEntity_Trigger>
                   <N2KSQLServerEntity />
                   <TriggerName Value="iuPerson" />
@@ -2922,7 +2924,7 @@
         <StatsDatabaseName Value="" />
         <StatsSchemaName Value="" />
       </RuleController>
-      <TriggerMgrRule NS="DMS_Common" AS="DMSO">
+      <TriggerMgrRule>
         <DMSRule>
           <RuleBlock Value="00" />
           <RuleNumber Value="0002" />
@@ -2931,6 +2933,7 @@
           <IsBulk Value="False" />
           <WantMultipleActiveResultSets Value="False" />
           <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="01-0001" />
           <Description Value="" />
           <ExpandedState Value="False" />
@@ -2941,7 +2944,7 @@
         <TriggerManagerActionType Value="DISABLE_TRIGGERS" />
         <DMSRuleBindingList />
       </TriggerMgrRule>
-      <TriggerMgrRule NS="DMS_Common" AS="DMSO">
+      <TriggerMgrRule>
         <DMSRule>
           <RuleBlock Value="99" />
           <RuleNumber Value="0003" />
@@ -2950,6 +2953,7 @@
           <IsBulk Value="False" />
           <WantMultipleActiveResultSets Value="False" />
           <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="01-0001" />
           <Description Value="" />
           <ExpandedState Value="False" />
@@ -2960,23 +2964,25 @@
         <TriggerManagerActionType Value="ENABLE_TRIGGERS" />
         <DMSRuleBindingList />
       </TriggerMgrRule>
-      <RuleSubstitution NS="DMS_Common" AS="DMSO">
+      <RuleSubstitution>
         <DMSRule>
-          <RuleBlock Value="00" />
+          <RuleBlock Value="01" />
           <RuleNumber Value="0004" />
           <RuleSubscript Value="-01" />
           <IsDisabled Value="False" />
           <IsBulk Value="False" />
           <WantMultipleActiveResultSets Value="False" />
           <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="01-0001" />
           <Description Value="" />
-          <ExpandedState Value="False" />
+          <ExpandedState Value="True" />
           <ForceIsNullsOff Value="False" />
           <UserSpecifiedRIDIndexEnabled Value="False" />
           <UserSpecifiedRIDIndex Value="" />
         </DMSRule>
         <TargetTableName Value="Person" />
+        <UseDefaultCommitFrequency Value="True" />
         <WhereClauseAndSamplingContainer>
           <WhereClause Value="where ..." />
           <WhereClauseMode Value="No_WhereClause" />
@@ -3005,7 +3011,7 @@
               <IsPseudoColumn Value="False" />
               <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
             </N2KSQLServerEntity_PickedColumn>
-            <DataSet_MNAMES NS="DMS_DataSets" AS="DMSD">
+            <DataSet_MNAMES>
               <UpperCaseText Value="False" />
               <UniqueValuesOnly Value="False" />
             </DataSet_MNAMES>
@@ -3022,7 +3028,7 @@
               <IsPseudoColumn Value="False" />
               <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
             </N2KSQLServerEntity_PickedColumn>
-            <DataSet_RNDALN NS="DMS_DataSets" AS="DMSD">
+            <DataSet_RNDALN>
               <TemplateString Value="%C" />
             </DataSet_RNDALN>
           </DMSPickedColumnAndDataSet>
@@ -3038,7 +3044,7 @@
               <IsPseudoColumn Value="False" />
               <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
             </N2KSQLServerEntity_PickedColumn>
-            <DataSet_LNAMEL NS="DMS_DataSets" AS="DMSD">
+            <DataSet_LNAMEL>
               <UpperCaseText Value="False" />
               <UniqueValuesOnly Value="False" />
             </DataSet_LNAMEL>
@@ -3055,7 +3061,7 @@
               <IsPseudoColumn Value="False" />
               <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
             </N2KSQLServerEntity_PickedColumn>
-            <DataSet_NULGEN NS="DMS_DataSets" AS="DMSD" />
+            <DataSet_NULGEN />
           </DMSPickedColumnAndDataSet>
         </DMSPickedColumnAndDataSetCollection>
       </RuleSubstitution>
@@ -3068,6 +3074,7 @@
           <IsBulk Value="False" />
           <WantMultipleActiveResultSets Value="False" />
           <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="00-0000-00" />
           <Description Value="" />
           <ExpandedState Value="True" />
@@ -3075,7 +3082,7 @@
           <UserSpecifiedRIDIndexEnabled Value="False" />
           <UserSpecifiedRIDIndex Value="" />
         </DMSRule>
-        <DMSSchemaEntity_Login NS="DMS_Common" AS="DMSO">
+        <DMSSchemaEntity_Login>
           <N2KSQLServerEntity_Login>
             <N2KSQLServerEntity />
             <ServerName Value="US-LT-ANDREWP\SQL2016" />
@@ -3086,10 +3093,9 @@
             <ConnectionTimeout Value="15" />
             <DatabaseName Value="adventureworks2012" />
             <SchemaName Value="humanresources" />
-            <DBVersion Value="SSERVERVERSION2012" />
             <OnlyTablesWithRowsWereFetched Value="False" />
             <SchemaTables>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="Department" />
@@ -3097,7 +3103,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="DepartmentID" />
@@ -3110,7 +3116,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Name" />
@@ -3124,7 +3130,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="GroupName" />
@@ -3138,7 +3144,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -3156,7 +3162,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="Employee" />
@@ -3164,7 +3170,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -3177,7 +3183,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="NationalIDNumber" />
@@ -3191,7 +3197,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="LoginID" />
@@ -3205,7 +3211,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="OrganizationNode" />
@@ -3218,7 +3224,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="OrganizationLevel" />
@@ -3231,7 +3237,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="JobTitle" />
@@ -3245,7 +3251,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BirthDate" />
@@ -3258,7 +3264,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="MaritalStatus" />
@@ -3272,7 +3278,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Gender" />
@@ -3286,7 +3292,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="HireDate" />
@@ -3299,7 +3305,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="SalariedFlag" />
@@ -3312,7 +3318,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="VacationHours" />
@@ -3325,7 +3331,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="SickLeaveHours" />
@@ -3338,7 +3344,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="CurrentFlag" />
@@ -3351,7 +3357,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -3364,7 +3370,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -3382,7 +3388,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="EmployeeDepartmentHistory" />
@@ -3390,7 +3396,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -3403,7 +3409,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="DepartmentID" />
@@ -3416,7 +3422,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ShiftID" />
@@ -3429,7 +3435,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="StartDate" />
@@ -3442,7 +3448,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="EndDate" />
@@ -3455,7 +3461,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -3473,7 +3479,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="EmployeePayHistory" />
@@ -3481,7 +3487,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -3494,7 +3500,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="RateChangeDate" />
@@ -3507,7 +3513,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Rate" />
@@ -3520,7 +3526,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="PayFrequency" />
@@ -3533,7 +3539,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -3551,7 +3557,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="JobCandidate" />
@@ -3559,7 +3565,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="JobCandidateID" />
@@ -3572,7 +3578,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -3585,7 +3591,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Resume" />
@@ -3598,7 +3604,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -3616,7 +3622,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="Shift" />
@@ -3624,7 +3630,7 @@
                   <IsTmp Value="False" />
                   <IsGTmp Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ShiftID" />
@@ -3637,7 +3643,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Name" />
@@ -3651,7 +3657,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="StartTime" />
@@ -3664,7 +3670,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="EndTime" />
@@ -3677,7 +3683,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ModifiedDate" />
@@ -3698,7 +3704,7 @@
             </SchemaTables>
             <ExcludedTables />
             <SchemaIndexes>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_Department_Name" />
@@ -3706,7 +3712,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Name" />
@@ -3723,7 +3729,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_Department_DepartmentID" />
@@ -3731,7 +3737,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="DepartmentID" />
@@ -3747,7 +3753,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_DMS_AUDITTAB" />
@@ -3755,7 +3761,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="runid" />
@@ -3769,7 +3775,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ruleid" />
@@ -3786,7 +3792,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_Employee_LoginID" />
@@ -3794,7 +3800,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="LoginID" />
@@ -3811,7 +3817,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_Employee_NationalIDNumber" />
@@ -3819,7 +3825,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="NationalIDNumber" />
@@ -3836,7 +3842,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_Employee_rowguid" />
@@ -3844,7 +3850,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="rowguid" />
@@ -3860,7 +3866,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_Employee_OrganizationLevel_OrganizationNode" />
@@ -3868,7 +3874,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="OrganizationLevel" />
@@ -3881,7 +3887,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="OrganizationNode" />
@@ -3897,7 +3903,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_Employee_OrganizationNode" />
@@ -3905,7 +3911,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="OrganizationNode" />
@@ -3921,7 +3927,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_Employee_BusinessEntityID" />
@@ -3929,7 +3935,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -3945,7 +3951,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_EmployeeDepartmentHistory_DepartmentID" />
@@ -3953,7 +3959,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="DepartmentID" />
@@ -3969,7 +3975,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_EmployeeDepartmentHistory_ShiftID" />
@@ -3977,7 +3983,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ShiftID" />
@@ -3993,7 +3999,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_EmployeeDepartmentHistory_BusinessEntityID_StartDate_DepartmentID" />
@@ -4001,7 +4007,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -4014,7 +4020,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="StartDate" />
@@ -4027,7 +4033,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="DepartmentID" />
@@ -4040,7 +4046,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ShiftID" />
@@ -4056,7 +4062,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_EmployeePayHistory_BusinessEntityID_RateChangeDate" />
@@ -4064,7 +4070,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -4077,7 +4083,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="RateChangeDate" />
@@ -4093,7 +4099,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="IX_JobCandidate_BusinessEntityID" />
@@ -4101,7 +4107,7 @@
                   <IsUnique Value="False" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="BusinessEntityID" />
@@ -4117,7 +4123,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_JobCandidate_JobCandidateID" />
@@ -4125,7 +4131,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="JobCandidateID" />
@@ -4141,7 +4147,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_Shift_Name" />
@@ -4149,7 +4155,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="Name" />
@@ -4166,7 +4172,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="AK_Shift_StartTime_EndTime" />
@@ -4174,7 +4180,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="False" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="StartTime" />
@@ -4187,7 +4193,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="EndTime" />
@@ -4203,7 +4209,7 @@
                   </N2KSQLServerCollection_Column>
                 </N2KSQLServerEntity_Index>
               </DMSSchemaEntity_Index>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="PK_Shift_ShiftID" />
@@ -4211,7 +4217,7 @@
                   <IsUnique Value="True" />
                   <IsPrimaryKey Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ShiftID" />
@@ -4230,7 +4236,7 @@
             </SchemaIndexes>
             <ExcludedIndexes />
             <SchemaForeignKeys>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_Employee_Person_BusinessEntityID" />
@@ -4270,7 +4276,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_EmployeeDepartmentHistory_Department_DepartmentID" />
@@ -4310,7 +4316,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_EmployeeDepartmentHistory_Employee_BusinessEntityID" />
@@ -4350,7 +4356,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_EmployeeDepartmentHistory_Shift_ShiftID" />
@@ -4390,7 +4396,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_EmployeePayHistory_Employee_BusinessEntityID" />
@@ -4430,7 +4436,7 @@
                   </N2KSQLServerCollection_PickedColumnPair>
                 </N2KSQLServerEntity_ForeignKey>
               </DMSSchemaEntity_ForeignKey>
-              <DMSSchemaEntity_ForeignKey NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_ForeignKey>
                 <N2KSQLServerEntity_ForeignKey>
                   <N2KSQLServerEntity />
                   <FKChildConstraintName Value="FK_JobCandidate_Employee_BusinessEntityID" />
@@ -4472,7 +4478,7 @@
               </DMSSchemaEntity_ForeignKey>
             </SchemaForeignKeys>
             <SchemaTriggers>
-              <DMSSchemaEntity_Trigger NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Trigger>
                 <N2KSQLServerEntity_Trigger>
                   <N2KSQLServerEntity />
                   <TriggerName Value="dEmployee" />
@@ -4492,7 +4498,7 @@
         <StatsDatabaseName Value="" />
         <StatsSchemaName Value="" />
       </RuleController>
-      <TriggerMgrRule NS="DMS_Common" AS="DMSO">
+      <TriggerMgrRule>
         <DMSRule>
           <RuleBlock Value="00" />
           <RuleNumber Value="0006" />
@@ -4501,6 +4507,7 @@
           <IsBulk Value="False" />
           <WantMultipleActiveResultSets Value="False" />
           <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="02-0005" />
           <Description Value="" />
           <ExpandedState Value="False" />
@@ -4511,7 +4518,7 @@
         <TriggerManagerActionType Value="DISABLE_TRIGGERS" />
         <DMSRuleBindingList />
       </TriggerMgrRule>
-      <TriggerMgrRule NS="DMS_Common" AS="DMSO">
+      <TriggerMgrRule>
         <DMSRule>
           <RuleBlock Value="99" />
           <RuleNumber Value="0007" />
@@ -4520,6 +4527,7 @@
           <IsBulk Value="False" />
           <WantMultipleActiveResultSets Value="False" />
           <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="02-0005" />
           <Description Value="" />
           <ExpandedState Value="False" />
@@ -4530,23 +4538,25 @@
         <TriggerManagerActionType Value="ENABLE_TRIGGERS" />
         <DMSRuleBindingList />
       </TriggerMgrRule>
-      <RuleSubstitution NS="DMS_Common" AS="DMSO">
+      <RuleSubstitution>
         <DMSRule>
-          <RuleBlock Value="00" />
+          <RuleBlock Value="01" />
           <RuleNumber Value="0008" />
           <RuleSubscript Value="-01" />
           <IsDisabled Value="False" />
           <IsBulk Value="False" />
           <WantMultipleActiveResultSets Value="False" />
           <IsManagedRule Value="False" />
-          <SerializedParentRuleID Value="00-0004" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="01-0004" />
           <Description Value="" />
-          <ExpandedState Value="False" />
+          <ExpandedState Value="True" />
           <ForceIsNullsOff Value="False" />
           <UserSpecifiedRIDIndexEnabled Value="False" />
           <UserSpecifiedRIDIndex Value="" />
         </DMSRule>
         <TargetTableName Value="Person" />
+        <UseDefaultCommitFrequency Value="True" />
         <WhereClauseAndSamplingContainer>
           <WhereClause Value="where title = 'Mrs.' OR title = 'Sra.' OR title = 'Ms.'" />
           <WhereClauseMode Value="Custom_WhereClause" />
@@ -4575,23 +4585,24 @@
               <IsPseudoColumn Value="False" />
               <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
             </N2KSQLServerEntity_PickedColumn>
-            <DataSet_FNAMSP NS="DMS_DataSets" AS="DMSD">
+            <DataSet_FNAMSP>
               <UpperCaseText Value="False" />
               <UniqueValuesOnly Value="False" />
             </DataSet_FNAMSP>
           </DMSPickedColumnAndDataSet>
         </DMSPickedColumnAndDataSetCollection>
       </RuleSubstitution>
-      <RuleCommand NS="DMS_Common" AS="DMSO">
+      <RuleCommand>
         <DMSRule>
-          <RuleBlock Value="00" />
+          <RuleBlock Value="01" />
           <RuleNumber Value="0009" />
           <RuleSubscript Value="-01" />
           <IsDisabled Value="False" />
           <IsBulk Value="False" />
           <WantMultipleActiveResultSets Value="False" />
           <IsManagedRule Value="False" />
-          <SerializedParentRuleID Value="00-0008" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="01-0008" />
           <Description Value="" />
           <ExpandedState Value="False" />
           <ForceIsNullsOff Value="False" />
@@ -4604,13 +4615,13 @@
             <IgnoreErrStr Value="doesn't exist" />
           </IgnoreErrorsContainer>
         </DMSRule>
-        <SqlStmt Value="UPDATE Person.EmailAddress&#xD;&#xA;SET EmailAddress = FirstName + '.' + LastName + '@AdventureWorks.com'&#xD;&#xA;FROM Person.EmailAddress&#xD;&#xA;    INNER JOIN Person.Person&#xD;&#xA;        ON Person.BusinessEntityID = EmailAddress.BusinessEntityID;" />
+        <SqlStmt Value="UPDATE Person.EmailAddress&#xD;&#xA;SET EmailAddress = FirstName + '.' + LastName + '@AdventureWorks.com'&#xD;&#xA;FROM Person.EmailAddress&#xD;&#xA;    INNER JOIN Person.Person&#xD;&#xA;    &#xD;&#xA;        ON Person.BusinessEntityID = EmailAddress.BusinessEntityID;" />
         <SemiColonBlockDelimiter Value="True" />
         <ExitScriptOnError Value="False" />
         <RuleStage Value="STAGE1" />
         <SyncManagerRuleUsage Value="SYNCMGRUSAGE_NONE" />
       </RuleCommand>
-      <RuleSubstitution NS="DMS_Common" AS="DMSO">
+      <RuleSubstitution>
         <DMSRule>
           <RuleBlock Value="00" />
           <RuleNumber Value="0011" />
@@ -4619,6 +4630,7 @@
           <IsBulk Value="False" />
           <WantMultipleActiveResultSets Value="False" />
           <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="02-0005" />
           <Description Value="" />
           <ExpandedState Value="False" />
@@ -4627,6 +4639,7 @@
           <UserSpecifiedRIDIndex Value="" />
         </DMSRule>
         <TargetTableName Value="Employee" />
+        <UseDefaultCommitFrequency Value="True" />
         <WhereClauseAndSamplingContainer>
           <WhereClause Value="where ..." />
           <WhereClauseMode Value="Where_NotNullOrEmpty" />
@@ -4655,7 +4668,7 @@
               <IsPseudoColumn Value="False" />
               <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
             </N2KSQLServerEntity_PickedColumn>
-            <DataSet_DTCVAR NS="DMS_DataSets" AS="DMSD">
+            <DataSet_DTCVAR>
               <LowBound Value="-53" />
               <HighBound Value="65" />
               <UserSpecifiedVariance Value="10" />
@@ -4677,7 +4690,7 @@
               <IsPseudoColumn Value="False" />
               <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
             </N2KSQLServerEntity_PickedColumn>
-            <DataSet_DTCVAR NS="DMS_DataSets" AS="DMSD">
+            <DataSet_DTCVAR>
               <LowBound Value="-53" />
               <HighBound Value="65" />
               <UserSpecifiedVariance Value="10" />
@@ -4689,7 +4702,7 @@
           </DMSPickedColumnAndDataSet>
         </DMSPickedColumnAndDataSetCollection>
       </RuleSubstitution>
-      <RuleSubstitution NS="DMS_Common" AS="DMSO">
+      <RuleSubstitution>
         <DMSRule>
           <RuleBlock Value="01" />
           <RuleNumber Value="0012" />
@@ -4698,6 +4711,7 @@
           <IsBulk Value="False" />
           <WantMultipleActiveResultSets Value="False" />
           <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="01-0001" />
           <Description Value="" />
           <ExpandedState Value="False" />
@@ -4706,6 +4720,7 @@
           <UserSpecifiedRIDIndex Value="" />
         </DMSRule>
         <TargetTableName Value="PersonPhone" />
+        <UseDefaultCommitFrequency Value="True" />
         <WhereClauseAndSamplingContainer>
           <WhereClause Value="where ..." />
           <WhereClauseMode Value="Where_NotNullOrEmpty" />
@@ -4734,7 +4749,7 @@
               <IsPseudoColumn Value="False" />
               <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
             </N2KSQLServerEntity_PickedColumn>
-            <DataSet_RDUSTL NS="DMS_DataSets" AS="DMSD">
+            <DataSet_RDUSTL>
               <InvalidChecksum Value="False" />
               <DigitsOnly Value="False" />
               <SpaceSeparation Value="True" />
@@ -4743,7 +4758,7 @@
           </DMSPickedColumnAndDataSet>
         </DMSPickedColumnAndDataSetCollection>
       </RuleSubstitution>
-      <RuleSubstitution NS="DMS_Common" AS="DMSO">
+      <RuleSubstitution>
         <DMSRule>
           <RuleBlock Value="00" />
           <RuleNumber Value="0013" />
@@ -4752,6 +4767,7 @@
           <IsBulk Value="False" />
           <WantMultipleActiveResultSets Value="False" />
           <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="02-0005" />
           <Description Value="" />
           <ExpandedState Value="False" />
@@ -4760,6 +4776,7 @@
           <UserSpecifiedRIDIndex Value="" />
         </DMSRule>
         <TargetTableName Value="EmployeeDepartmentHistory" />
+        <UseDefaultCommitFrequency Value="True" />
         <WhereClauseAndSamplingContainer>
           <WhereClause Value="where ..." />
           <WhereClauseMode Value="Where_NotNullOrEmpty" />
@@ -4788,7 +4805,7 @@
               <IsPseudoColumn Value="False" />
               <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
             </N2KSQLServerEntity_PickedColumn>
-            <DataSet_DTCORR NS="DMS_DataSets" AS="DMSD">
+            <DataSet_DTCORR>
               <LowBound Value="-53" />
               <HighBound Value="65" />
               <ZeroNotValid Value="False" />
@@ -4806,7 +4823,7 @@
               <IsPseudoColumn Value="False" />
               <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
             </N2KSQLServerEntity_PickedColumn>
-            <DataSet_DTCORR NS="DMS_DataSets" AS="DMSD">
+            <DataSet_DTCORR>
               <LowBound Value="-53" />
               <HighBound Value="65" />
               <ZeroNotValid Value="False" />
@@ -4823,6 +4840,7 @@
           <IsBulk Value="False" />
           <WantMultipleActiveResultSets Value="False" />
           <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
           <SerializedParentRuleID Value="02-0005" />
           <Description Value="" />
           <ExpandedState Value="True" />
@@ -4831,7 +4849,7 @@
           <UserSpecifiedRIDIndex Value="" />
         </DMSRule>
         <StagingTableName Value="TMP_DMS_0014_6537904" />
-        <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+        <DMSSchemaEntity_Table>
           <N2KSQLServerEntity_Table>
             <N2KSQLServerEntity />
             <TableName Value="Shift" />
@@ -4839,7 +4857,7 @@
             <IsTmp Value="False" />
             <IsGTmp Value="False" />
             <N2KSQLServerCollection_Column>
-              <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Column>
                 <N2KSQLServerEntity_Column>
                   <N2KSQLServerEntity />
                   <ColumnName Value="ShiftID" />
@@ -4870,6 +4888,7 @@
               <IsBulk Value="False" />
               <WantMultipleActiveResultSets Value="False" />
               <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
               <SerializedParentRuleID Value="00-0000-00" />
               <Description Value="" />
               <ExpandedState Value="True" />
@@ -4878,7 +4897,7 @@
               <UserSpecifiedRIDIndex Value="" />
             </DMSRule>
           </RuleGroup>
-          <RuleCommand NS="DMS_Common" AS="DMSO">
+          <RuleCommand>
             <DMSRule>
               <RuleBlock Value="15" />
               <RuleNumber Value="0014" />
@@ -4887,6 +4906,7 @@
               <IsBulk Value="False" />
               <WantMultipleActiveResultSets Value="False" />
               <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
               <SerializedParentRuleID Value="00-0014-01" />
               <Description Value="Create adventureworks2012.humanresources.TMP_DMS_0014_6537904 Staging Table" />
               <ExpandedState Value="True" />
@@ -4908,7 +4928,7 @@
             <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGCREATE" />
             <SyncManagerReadOnly Value="True" />
           </RuleCommand>
-          <RuleCommand NS="DMS_Common" AS="DMSO">
+          <RuleCommand>
             <DMSRule>
               <RuleBlock Value="15" />
               <RuleNumber Value="0014" />
@@ -4917,6 +4937,7 @@
               <IsBulk Value="False" />
               <WantMultipleActiveResultSets Value="False" />
               <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
               <SerializedParentRuleID Value="15-0014-02" />
               <Description Value="Truncate adventureworks2012.adventureworks2012.TMP_DMS_0014_6537904 Staging Table" />
               <ExpandedState Value="False" />
@@ -4932,7 +4953,7 @@
             <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGTRUNC" />
             <SyncManagerReadOnly Value="True" />
           </RuleCommand>
-          <RuleSubstitution NS="DMS_Common" AS="DMSO">
+          <RuleSubstitution>
             <DMSRule>
               <RuleBlock Value="35" />
               <RuleNumber Value="0014" />
@@ -4941,6 +4962,7 @@
               <IsBulk Value="False" />
               <WantMultipleActiveResultSets Value="False" />
               <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
               <SerializedParentRuleID Value="00-0014-01" />
               <Description Value="Mask Staging Table" />
               <ExpandedState Value="False" />
@@ -4948,7 +4970,7 @@
               <UserSpecifiedRIDIndexEnabled Value="False" />
               <UserSpecifiedRIDIndex Value="" />
               <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_TOP" />
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="TMP_DMS_0014_6537904" />
@@ -4957,7 +4979,7 @@
                   <IsGTmp Value="False" />
                   <IsInternalAdditional Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ShiftID" />
@@ -4970,7 +4992,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ShiftID_DMSTMP" />
@@ -4983,7 +5005,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="DMSIdentityCol" />
@@ -5001,7 +5023,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="DMSStagingTablePK" />
@@ -5010,7 +5032,7 @@
                   <IsPrimaryKey Value="True" />
                   <IsInternalAdditional Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="DMSIdentityCol" />
@@ -5028,6 +5050,7 @@
               </DMSSchemaEntity_Index>
             </DMSRule>
             <TargetTableName Value="TMP_DMS_0014_6537904" />
+            <UseDefaultCommitFrequency Value="True" />
             <WhereClauseAndSamplingContainer>
               <WhereClause Value=" order by [ShiftID]" />
               <WhereClauseMode Value="No_WhereClause" />
@@ -5056,14 +5079,14 @@
                   <IsPseudoColumn Value="False" />
                   <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
                 </N2KSQLServerEntity_PickedColumn>
-                <DataSet_INTSEQ NS="DMS_DataSets" AS="DMSD">
+                <DataSet_INTSEQ>
                   <StartValue Value="1" />
                   <IncrementBy Value="1" />
                 </DataSet_INTSEQ>
               </DMSPickedColumnAndDataSet>
             </DMSPickedColumnAndDataSetCollection>
           </RuleSubstitution>
-          <RuleTableToTable NS="DMS_Common" AS="DMSO">
+          <RuleTableToTable>
             <DMSRule>
               <RuleBlock Value="55" />
               <RuleNumber Value="0014" />
@@ -5072,13 +5095,14 @@
               <IsBulk Value="False" />
               <WantMultipleActiveResultSets Value="False" />
               <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
               <SerializedParentRuleID Value="00-0014-01" />
               <Description Value="Sync adventureworks2012.Shift from TMP_DMS_0014_6537904" />
               <ExpandedState Value="False" />
               <ForceIsNullsOff Value="False" />
               <UserSpecifiedRIDIndexEnabled Value="False" />
               <UserSpecifiedRIDIndex Value="" />
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="TMP_DMS_0014_6537904" />
@@ -5087,7 +5111,7 @@
                   <IsGTmp Value="False" />
                   <IsInternalAdditional Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ShiftID" />
@@ -5100,7 +5124,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ShiftID_DMSTMP" />
@@ -5113,7 +5137,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="DMSIdentityCol" />
@@ -5131,7 +5155,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="DMSStagingTablePK" />
@@ -5140,7 +5164,7 @@
                   <IsPrimaryKey Value="True" />
                   <IsInternalAdditional Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="DMSIdentityCol" />
@@ -5224,7 +5248,7 @@
               </N2KSQLServerEntity_PickedColumnPair>
             </SyncColumnCollection>
           </RuleTableToTable>
-          <FKMgrRule NS="DMS_Common" AS="DMSO">
+          <FKMgrRule>
             <DMSRule>
               <RuleBlock Value="45" />
               <RuleNumber Value="0014" />
@@ -5233,6 +5257,7 @@
               <IsBulk Value="False" />
               <WantMultipleActiveResultSets Value="False" />
               <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
               <SerializedParentRuleID Value="00-0014-01" />
               <Description Value="Disable FKs on All Target Tables" />
               <ExpandedState Value="False" />
@@ -5245,7 +5270,7 @@
             <EnableNoValidate Value="False" />
             <DMSRuleBindingList />
           </FKMgrRule>
-          <FKMgrRule NS="DMS_Common" AS="DMSO">
+          <FKMgrRule>
             <DMSRule>
               <RuleBlock Value="65" />
               <RuleNumber Value="0014" />
@@ -5254,6 +5279,7 @@
               <IsBulk Value="False" />
               <WantMultipleActiveResultSets Value="False" />
               <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
               <SerializedParentRuleID Value="00-0014-01" />
               <Description Value="Enable FKs on All Target Tables" />
               <ExpandedState Value="False" />
@@ -5266,7 +5292,7 @@
             <EnableNoValidate Value="False" />
             <DMSRuleBindingList />
           </FKMgrRule>
-          <RuleCommand NS="DMS_Common" AS="DMSO">
+          <RuleCommand>
             <DMSRule>
               <RuleBlock Value="75" />
               <RuleNumber Value="0014" />
@@ -5275,6 +5301,7 @@
               <IsBulk Value="False" />
               <WantMultipleActiveResultSets Value="False" />
               <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
               <SerializedParentRuleID Value="00-0014-01" />
               <Description Value="Drop adventureworks2012.humanresources.TMP_DMS_0014_6537904 Staging Table" />
               <ExpandedState Value="False" />
@@ -5290,7 +5317,7 @@
             <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGDROP" />
             <SyncManagerReadOnly Value="True" />
           </RuleCommand>
-          <RuleTableToTable NS="DMS_Common" AS="DMSO">
+          <RuleTableToTable>
             <DMSRule>
               <RuleBlock Value="55" />
               <RuleNumber Value="0014" />
@@ -5299,13 +5326,14 @@
               <IsBulk Value="False" />
               <WantMultipleActiveResultSets Value="False" />
               <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
               <SerializedParentRuleID Value="00-0014-01" />
               <Description Value="Sync adventureworks2012.EmployeeDepartmentHistory from TMP_DMS_0014_6537904" />
               <ExpandedState Value="False" />
               <ForceIsNullsOff Value="False" />
               <UserSpecifiedRIDIndexEnabled Value="False" />
               <UserSpecifiedRIDIndex Value="" />
-              <DMSSchemaEntity_Table NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Table>
                 <N2KSQLServerEntity_Table>
                   <N2KSQLServerEntity />
                   <TableName Value="TMP_DMS_0014_6537904" />
@@ -5314,7 +5342,7 @@
                   <IsGTmp Value="False" />
                   <IsInternalAdditional Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ShiftID" />
@@ -5327,7 +5355,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="ShiftID_DMSTMP" />
@@ -5340,7 +5368,7 @@
                       <PlanType Value="WANTMASK_UNKNOWN" />
                       <PlanComments Value="" />
                     </DMSSchemaEntity_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="DMSIdentityCol" />
@@ -5358,7 +5386,7 @@
                 <PlanType Value="WANTMASK_UNKNOWN" />
                 <PlanComments Value="" />
               </DMSSchemaEntity_Table>
-              <DMSSchemaEntity_Index NS="DMS_Common" AS="DMSO">
+              <DMSSchemaEntity_Index>
                 <N2KSQLServerEntity_Index>
                   <N2KSQLServerEntity />
                   <IndexName Value="DMSStagingTablePK" />
@@ -5367,7 +5395,7 @@
                   <IsPrimaryKey Value="True" />
                   <IsInternalAdditional Value="True" />
                   <N2KSQLServerCollection_Column>
-                    <DMSSchemaEntity_Column NS="DMS_Common" AS="DMSO">
+                    <DMSSchemaEntity_Column>
                       <N2KSQLServerEntity_Column>
                         <N2KSQLServerEntity />
                         <ColumnName Value="DMSIdentityCol" />
@@ -5451,7 +5479,7 @@
               </N2KSQLServerEntity_PickedColumnPair>
             </SyncColumnCollection>
           </RuleTableToTable>
-          <RuleCommand NS="DMS_Common" AS="DMSO">
+          <RuleCommand>
             <DMSRule>
               <RuleBlock Value="25" />
               <RuleNumber Value="0014" />
@@ -5460,9 +5488,10 @@
               <IsBulk Value="False" />
               <WantMultipleActiveResultSets Value="False" />
               <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
               <SerializedParentRuleID Value="00-0014-01" />
               <Description Value="Populate humanresources.TMP_DMS_0014_6537904 Staging Table from Shift" />
-              <ExpandedState Value="False" />
+              <ExpandedState Value="True" />
               <ForceIsNullsOff Value="False" />
               <UserSpecifiedRIDIndexEnabled Value="False" />
               <UserSpecifiedRIDIndex Value="" />
@@ -5481,7 +5510,7 @@
             <SyncManagerDefaultString1 Value="Populate humanresources.TMP_DMS_0014_6537904 Staging Table from Shift" />
             <SyncManagerDefaultString2 Value="INSERT INTO [humanresources].[TMP_DMS_0014_6537904] ([ShiftID],[ShiftID_DMSTMP]) select distinct [ShiftID],[ShiftID] from [humanresources].[Shift] DMS1 WHERE [ShiftID] Is Not Null and [ShiftID] &lt;&gt; ''" />
           </RuleCommand>
-          <RuleCommand NS="DMS_Common" AS="DMSO">
+          <RuleCommand>
             <DMSRule>
               <RuleBlock Value="25" />
               <RuleNumber Value="0014" />
@@ -5490,6 +5519,7 @@
               <IsBulk Value="False" />
               <WantMultipleActiveResultSets Value="False" />
               <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
               <SerializedParentRuleID Value="25-0014-04" />
               <Description Value="Check EmployeeDepartmentHistory for missing keys, update humanresources.TMP_DMS_0014_6537904" />
               <ExpandedState Value="False" />
